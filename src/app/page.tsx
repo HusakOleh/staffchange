@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import {NextPage} from "next";
+import styles from './page.module.scss'
 
-export default function Home() {
+export default function Home():NextPage {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          <code className={styles.code}>STAFFCHANGE</code>
         </p>
         <div>
           <a
