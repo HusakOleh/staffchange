@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "export": "next export",
-    "lint": "next lint"
+    "deploy": "firebase deploy",
+    "build-deploy": "next build && next export && firebase deploy",
+    "start": "next start",
+    "format": "prettier --write ./src",
+    "lint": "next lint",
+    "fix-style": "npm run format && next lint"
   },
   "dependencies": {
+    "@next/font": "^13.4.4",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -23,6 +28,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "2.8.8",
     "sass": "^1.62.1"
   }
 }

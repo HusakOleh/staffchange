@@ -1,0 +1,9 @@
+@use '../../../styles/utils/mixins' as mixin;
+
+.header {
+  background: green;
+
+  @include mixin.onDesktop {
+    background: pink;
+  }
+}
