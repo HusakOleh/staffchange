@@ -1,4 +1,4 @@
-import { roboto, poppins } from '@/utils/fonts';
+import { lato, openSans } from '@/utils/fonts';
 import './globals.scss';
 
 import Header from '@/components/layouts/Header/Header';
@@ -21,8 +21,8 @@ export default function RootLayout({
     <html>
       <body
         className={`
-          ${roboto.variable} 
-          ${poppins.variable}
+          ${lato.variable} 
+          ${openSans.variable}
         `}
       >
         <Header />

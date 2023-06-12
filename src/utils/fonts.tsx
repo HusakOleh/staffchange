@@ -1,13 +1,13 @@
-import { Roboto, Poppins } from '@next/font/google';
+import { Lato, Open_Sans} from '@next/font/google';
 
-export const roboto = Roboto({
+export const lato = Lato({
   weight: '400',
   subsets: ['latin'],
-  variable: '--roboto-default',
+  variable: '--lato-default',
 });
 
-export const poppins = Poppins({
+export const openSans = Open_Sans({
   weight: '400',
   subsets: ['latin'],
-  variable: '--poppins-default',
+  variable: '--openSans-default',
 });
