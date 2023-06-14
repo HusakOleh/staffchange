@@ -1,4 +1,4 @@
-import { Lato, Open_Sans} from '@next/font/google';
+import { Lato, Open_Sans } from 'next/font/google';
 
 export const lato = Lato({
   weight: '400',

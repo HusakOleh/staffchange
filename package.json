@@ -14,7 +14,6 @@
     "fix-style": "npm run format && next lint"
   },
   "dependencies": {
-    "@next/font": "^13.4.4",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -24,6 +23,7 @@
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-swipeable": "^7.0.1",
     "reactfire": "^4.2.2",
     "typescript": "5.0.4"
   },

@@ -1,9 +1,56 @@
-@use '../../../styles/utils/mixins' as mixin;
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+
 
 .header {
-  background: green;
+  background: #95b595;
+  position: sticky;
+  top: 0;
+  @extend %vertical-padding__header;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &_lang {
+
+    justify-self: start;
+  }
+
+  &_logo {
+    justify-self: center;
+    flex-shrink: 0;
+  }
+
+  &_navMenu {
+    display: none;
+  }
 
   @include mixin.onDesktop {
-    background: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_logo {
+      order: 1;
+    }
+
+    &_navMenu {
+      order: 2;
+
+
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-self: flex-end;
+      margin-left: auto;
+
+      margin-right: 20px;
+    }
+
+    &_lang {
+      order: 3;
+    }
   }
 }
+

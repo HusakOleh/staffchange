@@ -1,0 +1,37 @@
+@use 'mixins' as mixin;
+
+%horizontal-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include mixin.onTablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include mixin.onDesktop {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+%vertical-padding {
+  &__header {
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  @include mixin.onTablet {
+    &__header {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  @include mixin.onDesktop {
+    &__header {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+}

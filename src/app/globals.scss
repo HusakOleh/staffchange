@@ -1,11 +1,21 @@
-@use '../styles/utils/reset';
-@use '../styles/utils/vars' as var;
-@use '../styles/utils/mixins' as mixin;
+@use '../utils/reset';
+@use '../utils/vars' as var;
+@use '../utils/mixins' as mixin;
+@use '../utils/placeholders';
 
-p {
-  font-family: var.$primaryFont;
+.bodyLock {
+  position: fixed;
+  overflow: hidden;
 }
 
-h1 {
-  font-family: var.$headingFont, sans-serif;
+.mainContainer {
+  width: 100%;
+  max-width: var.$max-width;
+  margin: 0 auto;
+
+  &_padding {
+    @extend %horizontal-padding;
+    @extend .mainContainer;
+  }
 }
+

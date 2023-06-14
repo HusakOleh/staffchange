@@ -1,0 +1,31 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.mobileMenu {
+  background: #b95e5e;
+  width: 90vw;
+  height: 100vh;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  transform: translateX(90vw);
+
+  transition: var.$transition;
+
+  @extend %vertical-padding__header;
+  @extend %horizontal-padding;
+
+  z-index: -1;
+
+
+  &_visible {
+    transform: translateX(0);
+  }
+
+  @include mixin.onDesktop {
+    display: none;
+  }
+}

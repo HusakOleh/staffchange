@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <h1>FOOTER А тепер кририлицею, ТУТ ТЕСТУЮ</h1>;
+  return (
+    <h1 style={{ background: 'pink' }}>
+      FOOTER А тепер кририлицею, ТУТ ТЕСТУЮ
+    </h1>
+  );
 }
