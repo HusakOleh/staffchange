@@ -5,26 +5,27 @@ interface Props {
   menuTrigger: () => void;
 }
 
-export default function MenuOpener({isOpen, menuTrigger}: Props) {
-
-
+export default function MenuOpener({ isOpen, menuTrigger }: Props) {
   return (
     <div className={styles.menuOpener} onClick={() => menuTrigger()}>
-      <span className={`
+      <span
+        className={`
         ${styles.menuOpener__item}
         ${isOpen ? styles.menuOpener__item_1 : ''}
-      `}>
-      </span>
-      <span className={`
+      `}
+      ></span>
+      <span
+        className={`
         ${styles.menuOpener__item}
         ${isOpen ? styles.menuOpener__item_2 : ''}
-      `}>
-      </span>
-      <span className={`
+      `}
+      ></span>
+      <span
+        className={`
         ${styles.menuOpener__item}
         ${isOpen ? styles.menuOpener__item_3 : ''}
-      `}>
-      </span>
+      `}
+      ></span>
     </div>
   );
 }

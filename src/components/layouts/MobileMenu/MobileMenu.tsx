@@ -7,10 +7,10 @@ interface Props {
   menuTrigger: () => void;
 }
 
-export default function MobileMenu({isOpen, menuTrigger}: Props) {
+export default function MobileMenu({ isOpen, menuTrigger }: Props) {
   const swipeRight = useSwipeable({
-    onSwipedRight: () => menuTrigger()
-  })
+    onSwipedRight: () => menuTrigger(),
+  });
 
   return (
     <div

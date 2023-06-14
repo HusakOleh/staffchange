@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { lato, openSans } from '@/utils/fonts';
 import './globals.scss';
 import style from './page.module.scss';
+import Image from 'next/image';
 
 import Header from '@/components/layouts/Header/Header';
 import Footer from '@/components/layouts/Footer/Footer';

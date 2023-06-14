@@ -6,19 +6,17 @@ import MobileMenu from '@/components/layouts/MobileMenu/MobileMenu';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-
   const menuTrigger: () => void = () => {
     setIsOpen(!isOpen);
-    const body:HTMLBodyElement | null = document.querySelector('body');
+    const body: HTMLBodyElement | null = document.querySelector('body');
 
     if (body) {
       body.classList.toggle('bodyLock');
     }
-  }
+  };
 
   return (
     <header
@@ -27,8 +25,6 @@ export default function Header() {
         ${style.header} 
       `}
     >
-
-
       <div
         className={`
           ${style.header_lang} 
@@ -38,15 +34,18 @@ export default function Header() {
       </div>
 
       <Link
-        href='/'
+        href="/"
         className={`
           ${style.header_logo} 
         `}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={'./img.jpg'}
-          alt='logo'
+        <Image
+          src={'/assets/img/logo.png'}
+          alt="logo"
+          width={200}
+          height={200}
+          priority
         />
       </Link>
 
@@ -55,23 +54,16 @@ export default function Header() {
           ${style.header_navMenu} 
         `}
       >
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
       </ul>
 
-      <MenuOpener
-        menuTrigger={menuTrigger}
-        isOpen={isOpen}
-      />
+      <MenuOpener menuTrigger={menuTrigger} isOpen={isOpen} />
 
-      <MobileMenu
-        menuTrigger={menuTrigger}
-        isOpen={isOpen}
-      />
-
+      <MobileMenu menuTrigger={menuTrigger} isOpen={isOpen} />
     </header>
   );
 }

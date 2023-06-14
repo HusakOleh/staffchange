@@ -12,6 +12,7 @@ $translateY: calc($gap + $item-height);
   justify-content: space-between;
   width: 24px;
   justify-self: end;
+  height: max-content;
 
   &__item {
     height: $item-height;
@@ -20,13 +21,13 @@ $translateY: calc($gap + $item-height);
     transition: var.$transition;
 
     &_1 {
-      transform: translateY($translateY) rotateZ(45deg) ;
+      transform: translateY($translateY) rotateZ(45deg);
     }
     &_2 {
       opacity: 0;
     }
     &_3 {
-      transform: translateY(-$translateY) rotateZ(-45deg) ;
+      transform: translateY(-$translateY) rotateZ(-45deg);
     }
   }
 
