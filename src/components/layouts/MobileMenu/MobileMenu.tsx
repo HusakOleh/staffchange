@@ -1,6 +1,8 @@
 import style from './MobileMenu.module.scss';
 import { useSwipeable } from 'react-swipeable';
-import { setStateType } from '@/types';
+
+
+import NavMenu from '@/components/layouts/NavMenu/NavMenu';
 
 interface Props {
   isOpen: boolean;
@@ -14,16 +16,29 @@ export default function MobileMenu({ isOpen, menuTrigger }: Props) {
 
   return (
     <div
-      {...swipeRight}
       className={`
-            ${style.mobileMenu} 
-            ${isOpen ? style.mobileMenu_visible : ''}
-          `}
+        ${style.mobileMenu} 
+        ${isOpen ? style.mobileMenu_visible : ''}
+      `}
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur
-      eos molestiae placeat reprehenderit sit, voluptate. Assumenda consequuntur
-      eaque exercitationem in laboriosam, nam, necessitatibus nisi odit officiis
-      porro quaerat unde.
+      <div
+        className={`
+          ${style.mobileMenu__header} 
+        `}
+      >
+
+      </div>
+
+      <div
+        {...swipeRight}
+        className={`
+          ${style.mobileMenu__mainContent} 
+        `}
+      >
+        <NavMenu
+          callback={menuTrigger}
+        />
+      </div>
     </div>
   );
 }

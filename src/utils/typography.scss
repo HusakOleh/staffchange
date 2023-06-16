@@ -1,0 +1,54 @@
+@use 'mixins' as mixin;
+@use 'vars' as var;
+
+
+
+.typography {
+
+  &_h1 {
+    font-family: var.$primaryFont;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0;
+  }
+
+  &_h2 {
+    font-family: var.$primaryFont;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0;
+  }
+
+  &_nav__mobile {
+    font-family: var.$primaryFont;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0;
+  }
+
+
+  &_text {
+    font-family: var.$primaryFont;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0;
+  }
+
+  @include mixin.onTablet {}
+
+  @include mixin.onDesktop {
+    &_nav__mobile {
+      font-size: 1rem;
+    }
+  }
+
+  @include mixin.onLargeScreen {
+    &_nav__mobile {
+      font-size: 1.5rem;
+    }
+  }
+}

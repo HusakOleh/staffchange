@@ -4,10 +4,12 @@ import style from './Header.module.scss';
 import MenuOpener from '@/components/ui/MenuOpener/MenuOpener';
 import MobileMenu from '@/components/layouts/MobileMenu/MobileMenu';
 import Link from 'next/link';
-import Image from 'next/image';
+
+import NavMenu from '@/components/layouts/NavMenu/NavMenu';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
 
   const menuTrigger: () => void = () => {
     setIsOpen(!isOpen);
@@ -19,51 +21,53 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={`
+      <header
+        className={`
         mainContainer_padding
         ${style.header} 
       `}
-    >
-      <div
-        className={`
+      >
+        <div
+          className={`
           ${style.header_lang} 
         `}
-      >
-        lang
-      </div>
+        >
+          lang
+        </div>
 
-      <Link
-        href="/"
-        className={`
+        <Link
+          onClick={() => menuTrigger()}
+          href="/"
+          className={`
           ${style.header_logo} 
         `}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <Image
-          src={'/assets/img/logo.png'}
-          alt="logo"
-          width={200}
-          height={200}
-          priority
-        />
-      </Link>
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={'/assets/img/logo.png'}
+            alt="logo"
+          />
+        </Link>
 
-      <ul
-        className={`
+
+
+        <div
+          className={`
           ${style.header_navMenu} 
         `}
-      >
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
+        >
+          <NavMenu />
+        </div>
 
-      <MenuOpener menuTrigger={menuTrigger} isOpen={isOpen} />
+        <MenuOpener
+          menuTrigger={menuTrigger}
+          isOpen={isOpen}
+        />
 
-      <MobileMenu menuTrigger={menuTrigger} isOpen={isOpen} />
-    </header>
+        <MobileMenu
+          menuTrigger={menuTrigger}
+          isOpen={isOpen}
+        />
+      </header>
   );
 }

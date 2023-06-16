@@ -7,7 +7,10 @@ interface Props {
 
 export default function MenuOpener({ isOpen, menuTrigger }: Props) {
   return (
-    <div className={styles.menuOpener} onClick={() => menuTrigger()}>
+    <div
+      className={styles.menuOpener}
+      onClick={() => menuTrigger()}
+    >
       <span
         className={`
         ${styles.menuOpener__item}

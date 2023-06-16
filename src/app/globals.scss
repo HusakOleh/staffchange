@@ -3,9 +3,15 @@
 @use '../utils/mixins' as mixin;
 @use '../utils/placeholders';
 
+@use "../utils/typography";
+
 .bodyLock {
   position: fixed;
   overflow: hidden;
+}
+
+body {
+  width: 100vw;
 }
 
 .mainContainer {

@@ -14,10 +14,12 @@ $translateY: calc($gap + $item-height);
   justify-self: end;
   height: max-content;
 
+  z-index: 2;
+
   &__item {
     height: $item-height;
     width: 100%;
-    background: var.$typography-color;
+    background: var.$typography-color2;
     transition: var.$transition;
 
     &_1 {
@@ -31,8 +33,12 @@ $translateY: calc($gap + $item-height);
     }
   }
 
-  &:hover {
+  &:hover, &:focus {
     cursor: pointer;
+
+    & > * {
+      background: var.$typography-color3;
+    }
   }
 
   @include mixin.onDesktop {
