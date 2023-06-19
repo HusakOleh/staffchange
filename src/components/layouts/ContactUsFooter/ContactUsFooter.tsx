@@ -1,0 +1,80 @@
+import style from './ContactUsFooter.module.scss';
+
+import contacts from '@/data/contacts.json';
+import Link from 'next/link';
+
+import { contactIcons } from '@/data/icons';
+
+export default function ContactUsFooter() {
+  return (
+    <div className={style.contactUs}>
+      <h3
+        className={`
+          typography_h3
+          ${style.contactUs__title}
+        `}
+      >
+        Contact us
+      </h3>
+
+      <div
+        className={`
+          ${style.contactUs__contacts}
+        `}
+      >
+        <ul
+          className={`
+          ${style.contactUs__address}
+        `}
+        >
+          {contacts.addresses.map((el) => (
+            <li key={el.id}>
+              <Link
+                href={el.link}
+                target={'_blank'}
+                className={`
+                typography_text
+                ${style.contactUs__addressItem}
+              `}
+              >
+                <span
+                  className={`
+                  typography_h3
+                  ${style.contactUs__addressTitle}
+                `}
+                >
+                  {contactIcons.location}
+                  {el?.country}
+                  {` ${el?.city}`}
+                </span>
+
+                <span>{el?.address}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul
+          className={`
+          ${style.contactUs__phones} 
+        `}
+        >
+          {contacts.contacts.map((el) => (
+            <li key={el.id}>
+              <Link
+                href={el.link}
+                className={`
+                typography_text
+                ${style.contactUs__phonesLink}
+              `}
+              >
+                {contactIcons[el.type]}
+                {el.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}

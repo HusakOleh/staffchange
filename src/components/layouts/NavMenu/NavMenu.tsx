@@ -2,21 +2,18 @@ import style from './NavMenu.module.scss';
 import navLink from '@/data/navLink.json';
 import NavLink from '@/components/ui/NavLink/NavLink';
 
-
 interface Props {
   callback?: () => void;
 }
 
-export default function NavMenu ({callback}: Props) {
-
-
+export default function NavMenu({ callback }: Props) {
   const closeMenu = (id: number) => {
-    if(callback)  {
+    if (callback) {
       callback();
     }
 
     return;
-  }
+  };
 
   return (
     <ul
@@ -25,22 +22,15 @@ export default function NavMenu ({callback}: Props) {
         `}
     >
       {navLink.map((link) => {
-
-
-
         return (
           <li
             key={link.id}
             onClick={() => closeMenu(link.id)}
           >
-            <NavLink
-              href={link.link}
-            >
-              {link.name}
-            </NavLink>
+            <NavLink href={link.link}>{link.name}</NavLink>
           </li>
-        )
+        );
       })}
     </ul>
-  )
+  );
 }

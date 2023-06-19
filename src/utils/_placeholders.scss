@@ -21,10 +21,20 @@
     padding-bottom: 0.5rem;
   }
 
+  &__footer {
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
   @include mixin.onTablet {
     &__header {
       padding-top: 1rem;
       padding-bottom: 1rem;
+    }
+
+    &__footer {
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
     }
   }
 

@@ -10,7 +10,6 @@ import NavMenu from '@/components/layouts/NavMenu/NavMenu';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-
   const menuTrigger: () => void = () => {
     setIsOpen(!isOpen);
     const body: HTMLBodyElement | null = document.querySelector('body');
@@ -21,53 +20,49 @@ export default function Header() {
   };
 
   return (
-      <header
-        className={`
+    <header
+      className={`
         mainContainer_padding
         ${style.header} 
       `}
-      >
-        <div
-          className={`
+    >
+      <div
+        className={`
           ${style.header_lang} 
         `}
-        >
-          lang
-        </div>
+      >
+        lang
+      </div>
 
-        <Link
-          onClick={() => menuTrigger()}
-          href="/"
-          className={`
-          ${style.header_logo} 
-        `}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={'/assets/img/logo.png'}
-            alt="logo"
-          />
-        </Link>
+      <Link
+        onClick={() => menuTrigger()}
+        href="/"
+        className="logo"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={'/assets/img/logo.png'}
+          alt="logo"
+        />
+      </Link>
 
-
-
-        <div
-          className={`
+      <div
+        className={`
           ${style.header_navMenu} 
         `}
-        >
-          <NavMenu />
-        </div>
+      >
+        <NavMenu />
+      </div>
 
-        <MenuOpener
-          menuTrigger={menuTrigger}
-          isOpen={isOpen}
-        />
+      <MenuOpener
+        menuTrigger={menuTrigger}
+        isOpen={isOpen}
+      />
 
-        <MobileMenu
-          menuTrigger={menuTrigger}
-          isOpen={isOpen}
-        />
-      </header>
+      <MobileMenu
+        menuTrigger={menuTrigger}
+        isOpen={isOpen}
+      />
+    </header>
   );
 }

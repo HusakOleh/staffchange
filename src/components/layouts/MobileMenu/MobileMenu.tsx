@@ -1,7 +1,6 @@
 import style from './MobileMenu.module.scss';
 import { useSwipeable } from 'react-swipeable';
 
-
 import NavMenu from '@/components/layouts/NavMenu/NavMenu';
 
 interface Props {
@@ -25,9 +24,7 @@ export default function MobileMenu({ isOpen, menuTrigger }: Props) {
         className={`
           ${style.mobileMenu__header} 
         `}
-      >
-
-      </div>
+      ></div>
 
       <div
         {...swipeRight}
@@ -35,9 +32,7 @@ export default function MobileMenu({ isOpen, menuTrigger }: Props) {
           ${style.mobileMenu__mainContent} 
         `}
       >
-        <NavMenu
-          callback={menuTrigger}
-        />
+        <NavMenu callback={menuTrigger} />
       </div>
     </div>
   );

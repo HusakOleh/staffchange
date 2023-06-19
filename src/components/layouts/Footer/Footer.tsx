@@ -1,7 +1,44 @@
+import style from './Footer.module.scss';
+import Link from 'next/link';
+import ContactUsFooter from '@/components/layouts/ContactUsFooter/ContactUsFooter';
+
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <h1 style={{ background: 'pink' }}>
-      FOOTER А тепер кририлицею, ТУТ ТЕСТУЮ
-    </h1>
+    <footer
+      className={`
+        mainContainer_padding
+        ${style.footer} 
+      `}
+    >
+      <div
+        className={`
+          ${style.footer__info} 
+        `}
+      >
+        <Link
+          href="/"
+          className="logo"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={'/assets/img/logo.png'}
+            alt="logo"
+          />
+        </Link>
+
+        <ContactUsFooter />
+      </div>
+
+      <div
+        className={`
+          typography_text 
+            ${style.footer__copyright} 
+        `}
+      >
+        © Staffchange 2022 – {currentYear}
+      </div>
+    </footer>
   );
 }

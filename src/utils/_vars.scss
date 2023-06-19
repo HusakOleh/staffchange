@@ -1,11 +1,13 @@
-$primaryFont: --openSans-default, --lato-default, sans-serif;
+$titleFont: --openSans-default, sans-serif;
+$textFont: --lato-default, sans-serif;
 
 $max-width: 2560px;
 $transition: all 0.3s ease-out;
+$transform: scale(1.1);
 
 $typography-color: #424242;
 $typography-color2: #485460;
-$typography-color3: #2A7ACB;
+$typography-color3: #2a7acb;
 $typography-color4: #fff;
 $main-bg-color: #fff;
 
@@ -14,3 +16,4 @@ $logo-width: 170px;
 
 $box-shadow: -3px 20px 11px 4px $typography-color;
 $box-shadow__nav: 0px 10px 10px 0 $typography-color2;
+$focus-drop-shadow: drop-shadow(0px 0px 0.7px $typography-color2);

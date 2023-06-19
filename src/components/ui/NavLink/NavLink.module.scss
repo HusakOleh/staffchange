@@ -6,7 +6,6 @@
   color: var.$typography-color2;
   padding: 0.5em 0;
 
-
   &::after {
     content: '';
     display: block;
@@ -20,9 +19,8 @@
     transition: var.$transition;
   }
 
-
-
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var.$typography-color3;
 
     &::after {

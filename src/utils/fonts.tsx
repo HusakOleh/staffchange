@@ -9,5 +9,3 @@ export const lato = Lato({
   subsets: ['latin'],
   variable: '--lato-default',
 });
-
-

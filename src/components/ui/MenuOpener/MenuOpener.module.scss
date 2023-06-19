@@ -33,7 +33,8 @@ $translateY: calc($gap + $item-height);
     }
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     cursor: pointer;
 
     & > * {

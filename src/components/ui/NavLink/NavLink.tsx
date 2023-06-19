@@ -14,7 +14,7 @@ export default function NavLink({ children, href }: Props) {
   return (
     <Link
       className={`
-        typography_nav__mobile
+        typography_nav
         ${style.navLink}
         ${isActive ? style.navLink_active : ''}
       `}
