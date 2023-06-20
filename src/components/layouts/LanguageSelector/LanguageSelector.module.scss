@@ -1,0 +1,19 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.dropdown {
+  background: dodgerblue;
+
+  &__mainField {
+    background: green;
+
+    //width: 40px;
+    //height: 60px;
+
+    & > svg {
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

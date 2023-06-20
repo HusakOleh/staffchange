@@ -32,7 +32,14 @@ export default function RootLayout({ children }: Props) {
         `}
       >
         <Header />
-        <main className="">{children}</main>
+        <main
+          className={`
+            mainContainer
+            ${style.mainContent}
+          `}
+        >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

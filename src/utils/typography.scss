@@ -2,13 +2,13 @@
 @use 'vars' as var;
 
 .typography {
-  //&_h1 {
-  //  font-family: var.$primaryFont;
-  //  font-size: 2rem;
-  //  font-weight: 500;
-  //  line-height: 1.5em;
-  //  letter-spacing: 0;
-  //}
+  &_h1 {
+    font-family: var.$titleFont;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
 
   //&_h2 {
   //  font-family: var.$primaryFont;
@@ -22,6 +22,14 @@
     font-family: var.$titleFont;
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 0;
+  }
+
+  &_h4 {
+    font-family: var.$titleFont;
+    font-size: 1rem;
+    font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0;
   }

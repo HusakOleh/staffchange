@@ -6,6 +6,7 @@ import MobileMenu from '@/components/layouts/MobileMenu/MobileMenu';
 import Link from 'next/link';
 
 import NavMenu from '@/components/layouts/NavMenu/NavMenu';
+import LanguageSelector from '@/components/layouts/LanguageSelector/LanguageSelector';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Header() {
           ${style.header_lang} 
         `}
       >
-        lang
+        <LanguageSelector />
       </div>
 
       <Link

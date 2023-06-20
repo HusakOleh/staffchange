@@ -26,6 +26,11 @@
     padding-bottom: 5rem;
   }
 
+  &__title-page {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   @include mixin.onTablet {
     &__header {
       padding-top: 1rem;
@@ -35,6 +40,11 @@
     &__footer {
       padding-top: 1.5rem;
       padding-bottom: 3rem;
+    }
+
+    &__title-page {
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
     }
   }
 
