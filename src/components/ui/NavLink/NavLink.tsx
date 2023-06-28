@@ -1,7 +1,7 @@
-import { ReactNode, useContext } from 'react';
+import { ReactNode, useEffect } from 'react';
 import style from './NavLink.module.scss';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 interface Props {
   children: ReactNode;
@@ -9,7 +9,13 @@ interface Props {
 }
 
 export default function NavLink({ children, href }: Props) {
-  const isActive = usePathname() === href;
+  function useActivePath() {
+    const path = usePathname().split('/');
+
+    return path;
+  }
+
+  const isActive = href === href;
 
   return (
     <Link

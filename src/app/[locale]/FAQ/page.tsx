@@ -1,7 +1,7 @@
-import style from 'page.module.scss';
+import style from '@/app/[locale]/FAQ/page.module.scss';
 import CommonPageLayout from '@/components/layouts/CommonPageLayout/CommonPageLayout';
 
-export default function About() {
+export default function Faq() {
   return (
     <CommonPageLayout
       title={'Staffchange: Partnership for Progress'}

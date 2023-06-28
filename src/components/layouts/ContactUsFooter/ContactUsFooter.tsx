@@ -10,7 +10,7 @@ export default function ContactUsFooter() {
     <div className={style.contactUs}>
       <h3
         className={`
-          typography_h3
+          typography_h4
           ${style.contactUs__title}
         `}
       >
@@ -33,13 +33,12 @@ export default function ContactUsFooter() {
                 href={el.link}
                 target={'_blank'}
                 className={`
-                typography_text
                 ${style.contactUs__addressItem}
               `}
               >
                 <span
                   className={`
-                  typography_h3
+                  typography_h5
                   ${style.contactUs__addressTitle}
                 `}
                 >
@@ -48,7 +47,14 @@ export default function ContactUsFooter() {
                   {` ${el?.city}`}
                 </span>
 
-                <span>{el?.address}</span>
+                <span
+                  className={`
+                    typography_text
+                    ${style.contactUs__addressDescription}
+                  `}
+                >
+                  {el?.address}
+                </span>
               </Link>
             </li>
           ))}

@@ -1,0 +1,14 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "About": {
+    "title": "this about page!"
+  },
+  "Header": {
+    "main": "Main",
+    "about": "About",
+    "workAt": "Work at Staffchange",
+    "FAQ": "FAQ"
+  }
+}

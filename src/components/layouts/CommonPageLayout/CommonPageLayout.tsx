@@ -41,7 +41,6 @@ export default function CommonPageLayout({ children, title, subtitle }: Props) {
       <div
         className={`
           ${style.commonLayout__bottom}
-          mainContainer_padding  
         `}
       >
         {children}

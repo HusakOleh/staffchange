@@ -4,10 +4,12 @@
 
 .header {
   position: sticky;
+  z-index: 100;
   top: 0;
   @extend %vertical-padding__header;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   align-items: center;
   background: var.$main-bg-color;
 

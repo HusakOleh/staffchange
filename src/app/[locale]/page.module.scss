@@ -1,0 +1,46 @@
+@use '../../utils/vars' as var;
+@use '../../utils/mixins' as mixin;
+@use '../../utils/placeholders';
+
+.wrap {
+  //height: 100px;
+  //background: green;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+
+ & > div {
+   //background: pink;
+ }
+
+
+
+  @include mixin.onDesktop() {
+    gap: 3rem;
+  }
+}
+
+
+
+.bottom {
+  background: var.$main-bg-color;
+  @extend %horizontal-padding__page-item;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  &__subTitle {
+    color: var.$typography-color1;
+  }
+
+  @include mixin.onDesktop {
+    gap: 2rem;
+  }
+}
+
+.title {
+  color: var.$typography-color3;
+}

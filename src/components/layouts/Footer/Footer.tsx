@@ -34,7 +34,7 @@ export default function Footer() {
       <div
         className={`
           typography_text 
-            ${style.footer__copyright} 
+          ${style.footer__copyright} 
         `}
       >
         © Staffchange 2022 – {currentYear}

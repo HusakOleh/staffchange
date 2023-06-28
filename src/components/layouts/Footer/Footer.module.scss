@@ -16,6 +16,10 @@
     gap: 2rem;
   }
 
+  &__copyright {
+    color: var.$typography-color1;
+  }
+
   @include mixin.onDesktop {
     align-items: stretch;
 

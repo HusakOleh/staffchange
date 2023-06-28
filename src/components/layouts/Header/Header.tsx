@@ -8,7 +8,11 @@ import Link from 'next/link';
 import NavMenu from '@/components/layouts/NavMenu/NavMenu';
 import LanguageSelector from '@/components/layouts/LanguageSelector/LanguageSelector';
 
-export default function Header() {
+interface Props {
+  [key: string]: string;
+}
+
+export default function Header({ ...props }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuTrigger: () => void = () => {

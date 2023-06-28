@@ -1,0 +1,14 @@
+{
+  "Index": {
+    "title": "Witaj świecie!"
+  },
+  "About": {
+    "title": "o tej stronie!"
+  },
+  "Header": {
+    "main": "Główny",
+    "about": "O nas",
+    "workAt": "Praca w Staffchange",
+    "FAQ": "FAQ"
+  }
+}

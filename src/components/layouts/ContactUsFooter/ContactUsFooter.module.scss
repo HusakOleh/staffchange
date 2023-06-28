@@ -18,7 +18,7 @@
   }
 
   &__title {
-    color: var.$typography-color;
+    color: var.$typography-color1;
     align-self: center;
   }
 
@@ -34,7 +34,7 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-    color: var.$typography-color3;
+    color: var.$typography-color4;
     transition: var.$transition;
 
     &:hover,
@@ -57,12 +57,16 @@
   }
 
   &__addressTitle {
-    color: var.$typography-color3;
+    color: var.$typography-color4;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+  }
+
+  &__addressDescription {
+    color: var.$typography-color1;
   }
 
   @include mixin.onDesktop {

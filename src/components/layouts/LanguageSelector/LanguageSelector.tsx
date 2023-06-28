@@ -1,27 +1,27 @@
-import { useState } from 'react';
 import style from './LanguageSelector.module.scss';
+import Link from 'next-intl/link';
 
-import GB from '@/icons/langIcon/GB.svg';
-import PL from '@/icons/langIcon/GB.svg';
-import RU from '@/icons/langIcon/GB.svg';
+import en from '@/icons/langIcon/en.svg';
+import pl from '@/icons/langIcon/pl.svg';
+import ru from '@/icons/langIcon/ru.svg';
 
 export default function LanguageSelector() {
-  const [language, setLanguage] = useState('GB');
-
-  const handleLanguageChange = (event: any) => {
-    setLanguage(event.target.value);
-  };
-
   return (
     <div>
-      <select
-        value={language}
-        onChange={handleLanguageChange}
+      <Link
+        href="/"
+        locale="en"
       >
-        <option value="GB">English</option>
-        <option value="PL">Poland</option>
-        <option value="RU">Russian</option>
-      </select>
+        English
+      </Link>
+      <br />
+      <br />
+      <Link
+        href="/"
+        locale="pl"
+      >
+        Poland
+      </Link>
     </div>
   );
 }
