@@ -3,9 +3,7 @@ import { lato, openSans } from '@/utils/fonts';
 import './globals.scss';
 import style from './page.module.scss';
 
-import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
-import GetDictionaryHOC from '@/hoc/GetDictionaryHOC';
 import Header from '@/components/layouts/Header/Header';
 import Footer from '@/components/layouts/Footer/Footer';
 
@@ -21,16 +19,12 @@ export const metadata: Metadata = {
   description: '',
 };
 
-export default function LocaleLayout({ children, params }: Props) {
-  const locale = useLocale();
-  // Show a 404 error if the user requests an unknown locale
-  if (params.locale !== locale) {
-    notFound();
-  }
+export default function Layout({ children, params }: Props) {
+
+
 
   return (
     <html
-      lang={locale}
       className={`
         ${lato.variable} 
         ${openSans.variable}
@@ -41,9 +35,7 @@ export default function LocaleLayout({ children, params }: Props) {
           container
         `}
       >
-        <GetDictionaryHOC namespace={'Header'}>
-          <Header />
-        </GetDictionaryHOC>
+      <Header />
 
         <main
           className={`
