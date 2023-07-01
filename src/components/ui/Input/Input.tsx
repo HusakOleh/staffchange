@@ -1,4 +1,4 @@
-import {ChangeEvent} from 'react';
+import { ChangeEvent } from 'react';
 import style from './Input.module.scss';
 
 import { setStateType } from '@/types';
@@ -10,29 +10,24 @@ type InputType = 'text' | 'email';
 interface Props {
   type: InputType;
   value: string;
-  placeholder: string
+  placeholder: string;
   setValue: setStateType<string>;
   valid?: boolean;
 }
-export default function Input ({
-                                 type,
-                                 value,
-                                 placeholder,
-                                 setValue,
-                                 valid = true
+export default function Input({
+  type,
+  value,
+  placeholder,
+  setValue,
+  valid = true,
 }: Props) {
-
-
   const handleChange: InputHandleChangeType = (event) => {
     setValue(event.target.value);
-  }
+  };
 
   return (
-    <div
-      className={style.wrap}
-    >
-
-      {!valid &&
+    <div className={style.wrap}>
+      {!valid && (
         <p
           className={`
             typography_warning
@@ -41,7 +36,7 @@ export default function Input ({
         >
           {'Invalid email'}
         </p>
-      }
+      )}
 
       <input
         className={`
@@ -55,6 +50,5 @@ export default function Input ({
         onChange={handleChange}
       />
     </div>
-
   );
 }

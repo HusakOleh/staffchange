@@ -9,13 +9,7 @@ interface Props {
 }
 
 export default function NavLink({ children, href }: Props) {
-  function useActivePath() {
-    const path = usePathname().split('/');
-
-    return path;
-  }
-
-  const isActive = href === href;
+  const isActive = usePathname() === href + '/';
 
   return (
     <Link

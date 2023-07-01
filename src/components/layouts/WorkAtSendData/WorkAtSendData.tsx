@@ -1,12 +1,9 @@
 import style from './WorkAtSendData.module.scss';
 import SendForm from '@/components/layouts/SendForm/SendForm';
 
-export default function WorkAtSendData () {
-
+export default function WorkAtSendData() {
   return (
-    <div
-      className={style.WorkAtSendData}
-    >
+    <div className={style.WorkAtSendData}>
       <h5
         className={`
           ${style.WorkAtSendData__title}

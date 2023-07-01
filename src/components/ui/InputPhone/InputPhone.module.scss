@@ -13,12 +13,8 @@
 .input {
   @extend .typography_input;
 
-
-
   & > input {
     font-size: 1em;
-
-
 
     border: none;
     color: var.$typography-color2;

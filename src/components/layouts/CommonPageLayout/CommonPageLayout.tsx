@@ -19,23 +19,29 @@ export default function CommonPageLayout({ children, title, subtitle }: Props) {
           mainContainer_padding  
         `}
       >
-        <h1
+        <div
           className={`
+            ${style.commonLayout__filter}
+          `}>
+          <h1
+            className={`
             typography_h1 
           `}
-        >
-          {title}
-        </h1>
+          >
+            {title}
+          </h1>
 
-        {subtitle && (
-          <p
-            className={`
+          {subtitle && (
+            <p
+              className={`
             typography_text
           `}
-          >
-            {subtitle}
-          </p>
-        )}
+            >
+              {subtitle}
+            </p>
+          )}
+        </div>
+
       </div>
 
       <div

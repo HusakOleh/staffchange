@@ -2,14 +2,12 @@
 const path = require('path');
 
 const nextConfig = {
-  // output: 'export',
-  // trailingSlash: true,
+  output: 'export',
+  trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+
   },
-
 };
-
-
 
 module.exports = nextConfig;
