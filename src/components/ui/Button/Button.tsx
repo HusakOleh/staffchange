@@ -1,8 +1,11 @@
-import { ReactNode, ButtonHTMLAttributes, MouseEventHandler } from "react";
+import { ReactNode, ButtonHTMLAttributes, MouseEventHandler } from 'react';
 import style from './Button.module.scss';
 
 type ButtonVariant = 'primary' | 'warning';
-type ButtonType = Extract<ButtonHTMLAttributes<HTMLButtonElement>['type'], string>
+type ButtonType = Extract<
+  ButtonHTMLAttributes<HTMLButtonElement>['type'],
+  string
+>;
 interface Props {
   children: ReactNode;
   className?: string;
@@ -18,8 +21,7 @@ export default function Button({
   type = 'button',
   onClick = () => {},
 }: Props) {
-
-  const buttonVariant = `button_${variant}`
+  const buttonVariant = `button_${variant}`;
 
   return (
     <button

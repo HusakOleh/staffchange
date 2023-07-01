@@ -1,30 +1,21 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 import style from './ListItemWithCheck.module.scss';
-import { FaCheck } from "react-icons/fa";
-
+import { FaCheck } from 'react-icons/fa';
 
 interface Props {
   children: ReactNode;
   key: string | number;
 }
 
-export default function ListItemWithCheck ({
-                                             children,
-  key
-}: Props) {
-
+export default function ListItemWithCheck({ children, key }: Props) {
   return (
     <li
       key={key}
       className={style.listItem}
     >
-      <FaCheck
-        className={style.check}
-      />
+      <FaCheck className={style.check} />
 
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </li>
-  )
+  );
 }

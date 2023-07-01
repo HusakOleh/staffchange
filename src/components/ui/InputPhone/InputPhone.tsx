@@ -1,8 +1,7 @@
 import React from 'react';
 import style from './InputPhone.module.scss';
 import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css'
-
+import 'react-phone-number-input/style.css';
 
 type Value = string | undefined;
 import { setStateType } from '@/types';
@@ -12,17 +11,10 @@ interface Props {
   setValue: setStateType<Value>;
   valid: boolean;
 }
-export default function InputPhone ({
-                                 value,
-                                 setValue,
-                                 valid,
-}: Props) {
-
+export default function InputPhone({ value, setValue, valid }: Props) {
   return (
-    <div
-      className={style.wrap}
-    >
-      {!valid &&
+    <div className={style.wrap}>
+      {!valid && (
         <p
           className={`
             typography_warning
@@ -31,8 +23,7 @@ export default function InputPhone ({
         >
           {'Invalid phone number'}
         </p>
-      }
-
+      )}
 
       <div
         className={`

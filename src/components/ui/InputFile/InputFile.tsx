@@ -1,8 +1,8 @@
 import style from './InputFile.module.scss';
-import { ChangeEvent, useState, useRef, useEffect } from "react";
-import { setStateType } from "@/types";
-import { fileType } from "@/types";
-import Button from "@/components/ui/Button/Button";
+import { ChangeEvent, useState, useRef, MouseEventHandler } from 'react';
+import { setStateType } from '@/types';
+import { fileType } from '@/types';
+import Button from '@/components/ui/Button/Button';
 
 type EventType = ChangeEvent<HTMLInputElement>;
 
@@ -11,65 +11,40 @@ interface Props {
   setValue: setStateType<fileType>;
 }
 
-export default function InputFile ({
-  value,
-  setValue
-                                   }: Props) {
+export default function InputFile({ value, setValue }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
-  const [fileName, setFileName] = useState('No file chosen')
+  const [fileName, setFileName] = useState('No file chosen');
 
-  const handleButtonClick = (event: MouseEvent) => {
+  const handleButtonClick: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.preventDefault();
     inputRef.current?.click();
-  }
+  };
 
-  const handleFileChange = (event: EventType ) => {
+  const handleFileChange = (event: EventType) => {
     if (event.target.files?.length) {
       const selectedFile = event.target.files[0];
       setValue(selectedFile);
-      setFileName(selectedFile.name)
+      setFileName(selectedFile.name);
     }
   };
 
-
   return (
-    <div
-      className={style.wrap}
-    >
-      <p
-        className={'typography_h5'}
-      >
-        Add your CV
-      </p>
+    <div className={style.wrap}>
+      <p className={'typography_h5'}>Add your CV</p>
 
+      <div className={style.inputWrap}>
+        <Button onClick={handleButtonClick}>Choose File</Button>
 
-    <div
-      className={style.inputWrap}
-    >
-      <Button
-        onClick={handleButtonClick}
-      >
-        Choose File
-      </Button>
+        <p className={'typography_text'}>{fileName}</p>
 
-      <p
-        className={'typography_text'}
-      >
-        {fileName}
-      </p>
+        <input
+          onChange={handleFileChange}
+          ref={inputRef}
+          type="file"
+        />
+      </div>
 
-      <input
-        onChange={handleFileChange}
-        ref={inputRef}
-        type='file'
-      />
-    </div>
-
-    <p
-      className={'typography_text'}
-    >
-      Max. file size: 2 MB.
-    </p>
+      <p className={'typography_text'}>Max. file size: 2 MB.</p>
     </div>
   );
 }

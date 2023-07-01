@@ -17,16 +17,16 @@ export default function Footer() {
           ${style.footer__info} 
         `}
       >
-        <Link
-          href="/"
-          className="logo"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={'/assets/img/logo.png'}
-            alt="logo"
-          />
-        </Link>
+        {/*<Link*/}
+        {/*  href="/"*/}
+        {/*  className="logo"*/}
+        {/*>*/}
+        {/*  /!* eslint-disable-next-line @next/next/no-img-element *!/*/}
+        {/*  <img*/}
+        {/*    src={'/assets/img/logo3.svg'}*/}
+        {/*    alt="logo"*/}
+        {/*  />*/}
+        {/*</Link>*/}
 
         <ContactUsFooter />
       </div>

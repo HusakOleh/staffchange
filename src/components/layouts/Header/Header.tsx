@@ -36,17 +36,17 @@ export default function Header({ ...props }: Props) {
           ${style.header_lang} 
         `}
       >
-        <LanguageSelector />
+        {/*<LanguageSelector />*/}
       </div>
 
       <Link
-        onClick={() => menuTrigger()}
+        // onClick={() => menuTrigger()}
         href="/"
         className="logo"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={'/assets/img/logo.png'}
+          src={'/assets/img/logo3.svg'}
           alt="logo"
         />
       </Link>
