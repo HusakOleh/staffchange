@@ -36,7 +36,7 @@ export default function Header({ ...props }: Props) {
           ${style.header_lang} 
         `}
       >
-        {/*<LanguageSelector />*/}
+        <LanguageSelector />
       </div>
 
       <Link

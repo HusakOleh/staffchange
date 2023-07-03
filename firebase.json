@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "staffchange2",
-    "source": ".",
+    "site": "staffchange-a4354",
+    "public": "out",
     "ignore": [
       "firebase.json",
       "**/.*",

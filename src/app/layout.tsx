@@ -8,6 +8,7 @@ import Header from '@/components/layouts/Header/Header';
 import Footer from '@/components/layouts/Footer/Footer';
 
 import { Metadata } from 'next';
+import LangProvider from '@/context/LangContext';
 
 interface Props {
   children: ReactNode;
@@ -20,7 +21,6 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children, params }: Props) {
-
   return (
     <html
       className={`
@@ -28,24 +28,25 @@ export default function Layout({ children, params }: Props) {
         ${openSans.variable}
       `}
     >
-      <body
-        className={`
+      <LangProvider>
+        <body
+          className={`
           container
         `}
-      >
+        >
+          <Header />
 
-      <Header />
-
-        <main
-          className={`
+          <main
+            className={`
             mainContainer
             mainContent
           `}
-        >
-          {children}
-        </main>
-        <Footer />
-      </body>
+          >
+            {children}
+          </main>
+          <Footer />
+        </body>
+      </LangProvider>
     </html>
   );
 }

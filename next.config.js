@@ -6,8 +6,7 @@ const nextConfig = {
   trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-
-  },
+  }
 };
 
 module.exports = nextConfig;

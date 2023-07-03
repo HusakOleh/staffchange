@@ -4,13 +4,11 @@ import { FaCheck } from 'react-icons/fa';
 
 interface Props {
   children: ReactNode;
-  key: string | number;
 }
 
-export default function ListItemWithCheck({ children, key }: Props) {
+export default function ListItemWithCheck({ children }: Props) {
   return (
     <li
-      key={key}
       className={style.listItem}
     >
       <FaCheck className={style.check} />
