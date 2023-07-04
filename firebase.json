@@ -1,17 +1,17 @@
 {
   "hosting": {
-    "site": "staffchange-a4354",
-    "public": "out",
+    "site": "staffchange2",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "frameworksBackend": {
+      "region": "europe-west1",
+      "minInstances": 0,
+      "maxInstances": 5,
+      "memory": "1GiB"
+    }
   }
 }
