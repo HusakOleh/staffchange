@@ -18,6 +18,7 @@ export default function LanguageSelector() {
       <option value="en">English</option>
       <option value="pl">Polish</option>
       <option value="et">Estonian</option>
+      <option value="ua">Ukrainian</option>
       <option value="ru">Russian</option>
     </select>
   );

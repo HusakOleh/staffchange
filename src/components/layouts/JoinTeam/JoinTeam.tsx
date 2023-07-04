@@ -1,21 +1,23 @@
-import { Fragment } from 'react';
+'use client'
+import { Fragment, useContext } from "react";
 import style from './JoinTeam.module.scss';
 import teamPrinciples from '@/data/teamPrinciples.json';
 import ListItemWithCheck from '@/components/ui/ListItemWithCheck/ListItemWithCheck';
+import { LangContext } from "@/context/LangContext";
+import translations from "@/data/translations.json";
 
 export default function JoinTeam() {
+  const { lang } = useContext(LangContext)
+
+  // @ts-ignore
+  const t: any = translations[lang].workAt;
+
   return (
     <div className={style.wrap}>
-      <h2 className={`typography_h2 ${style.title}`}>Join our team!</h2>
+      <h2 className={`typography_h2 ${style.title}`}>{t.title2}</h2>
 
       <p className={`typography_text`}>
-        At our company, we believe in diversity. We embrace different opinions
-        and perspectives, because the more perspectives there are, the more
-        ideas there are, and the better the solution will be. We are a team of
-        professionals who are unified by our shared goal of enhancing the
-        development of the industrial sector. If you are interested in joining
-        us, don&apos;t hesitate to reach out. Let us know in which field you can
-        contribute.
+        {t.description2}
       </p>
 
       <ul
@@ -35,7 +37,7 @@ export default function JoinTeam() {
                     ${style.list__title}
                   `}
                   >
-                    {el.title}
+                    {t.teamPrinciples[el.id].title}
                   </h3>
                   <p
                     className={`
@@ -43,7 +45,7 @@ export default function JoinTeam() {
                     ${style.list__content}
                   `}
                   >
-                    {el.content}
+                    {t.teamPrinciples[el.id].content}
                   </p>
                 </div>
               </ListItemWithCheck>

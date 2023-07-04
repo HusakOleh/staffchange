@@ -27,6 +27,13 @@
       "city": "Pärnu",
       "address": "Suur-Jõe 46a",
       "link": "https://goo.gl/maps/JiacRGMgkZG6Q2sB7"
+    },
+    {
+      "id": 3,
+      "country": "Kyrgyz Republic",
+      "city": "Bishkek",
+      "address": "Jil gorodok Sovmin, 1A, 10",
+      "link": "https://goo.gl/maps/JiacRGMgkZG6Q2sB7"
     }
   ]
 }

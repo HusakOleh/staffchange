@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "name": "Main",
+    "name": "main",
     "link": "/"
   },
   {
     "id": 2,
-    "name": "About",
+    "name": "about",
     "link": "/about"
   },
   {
     "id": 3,
-    "name": "Work at Staffchange",
+    "name": "workAt",
     "link": "/workAt"
   }
 ]

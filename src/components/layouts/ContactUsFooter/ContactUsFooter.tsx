@@ -1,11 +1,20 @@
+'use client'
 import style from './ContactUsFooter.module.scss';
 
 import contacts from '@/data/contacts.json';
 import Link from 'next/link';
 
 import { contactIcons } from '@/data/icons';
+import { useContext } from "react";
+import { LangContext } from "@/context/LangContext";
+import translations from "@/data/translations.json";
 
 export default function ContactUsFooter() {
+  const { lang } = useContext(LangContext)
+
+  // @ts-ignore
+  const t: any = translations[lang].footer;
+
   return (
     <div className={style.contactUs}>
       <h3
@@ -14,7 +23,7 @@ export default function ContactUsFooter() {
           ${style.contactUs__title}
         `}
       >
-        Contact us
+        {t.contact}
       </h3>
 
       <div
