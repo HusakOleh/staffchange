@@ -14,13 +14,6 @@ export default function WorkAt() {
   const t: any = translations[lang].about;
 
   return (
-    <CommonPageLayout
-      title={t.title1}
-      subtitle={t.description1}
-    >
-      <JoinTeam />
-
-      {/*<WorkAtSendData />*/}
-    </CommonPageLayout>
+    <JoinTeam />
   );
 }

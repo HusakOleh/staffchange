@@ -65,6 +65,20 @@ export default function ContactUsFooter() {
                   {el?.address}
                 </span>
               </Link>
+
+              {!!el.phone && (
+                <Link
+                  href={`tel:${el.phone}`}
+                  className={`
+                typography_text
+                ${style.contactUs__phonesLink}
+              `}
+                >
+                  {contactIcons.phone}
+                  {el.phone}
+                </Link>
+              )}
+
             </li>
           ))}
         </ul>

@@ -37,8 +37,7 @@
     color: var.$typography-color4;
     transition: var.$transition;
 
-    &:hover,
-    &:focus {
+    &:hover {
       transform: var.$transform;
     }
   }
