@@ -1,0 +1,15 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.mobileMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+
+  @include mixin.onDesktop {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}

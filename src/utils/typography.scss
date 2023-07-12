@@ -1,0 +1,103 @@
+@use 'mixins' as mixin;
+@use 'vars' as var;
+
+.typography {
+  &_h1 {
+    font-family: var.$titleFont;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  &_h2 {
+    font-family: var.$titleFont;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  &_h3 {
+    font-family: var.$titleFont;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  &_h4 {
+    font-family: var.$titleFont;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  &_h5 {
+    font-family: var.$titleFont;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  &_h6 {
+    font-family: var.$titleFont;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0;
+  }
+
+  &_text {
+    font-family: var.$textFont;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0;
+  }
+
+  &_nav {
+    font-family: var.$titleFont;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0;
+  }
+
+  &_input {
+    font-family: var.$textFont;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 0;
+  }
+
+  &_warning {
+    font-family: var.$textFont;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 0;
+  }
+
+  @include mixin.onTablet {
+  }
+
+  @include mixin.onDesktop {
+    &_nav__mobile {
+      font-size: 1rem;
+    }
+  }
+
+  @include mixin.onLargeScreen {
+    &_nav {
+      font-size: 1.5rem;
+    }
+
+    &_text {
+      font-size: 1.5rem;
+    }
+  }
+}

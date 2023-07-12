@@ -1,0 +1,43 @@
+{
+  "navLink": {
+    "main": "Main",
+    "about": "About",
+    "workAt": "Work at Staffchange"
+  },
+  "footer": {
+    "contact": "Contact us"
+  },
+  "main": {
+    "slogan": "We provide qualified workers in all spheres",
+    "title1": "Welcome to Staffchange: this is a Hansavest Group",
+    "description1": "      Welcome to Staffchange - your trusted partner in job search and employment! We are a company dedicated to harmonizing the needs of employers and candidates in the field of employment.\n            Our mission is to help qualified professionals realize their skills, and to aid young talents in finding their ideal job and elevate their career potential. We offer innovative solutions and personalized support to ensure successful employment for each of our clients.\n            Join our employment community today and start your journey to career growth and achievements!",
+    "title2": "            Your Bridge to Success: Staffchange",
+    "description2": "            The company Staffchange is a leader in the employment market, specializing in finding ideal job placements for candidates across various sectors. Our mission is to provide high-quality job search services, aligning the needs of candidates with the needs of employers.\n\n            We work with a broad spectrum of companies and organizations to ensure diversity of vacancies in different industries, from information technology and marketing to finance and medicine. Our team of professionals is always ready to provide you with personal support and advice to help you find a job that aligns with your goals and ambitions.\n\n            Join our employment community today and let us help you make your next career move!"
+  },
+  "about": {
+    "title1": "Staffchange: a Hansavest Group Partnership for Progress",
+    "description1": "Providing client-oriented workforce solutions aimed at bolstering your business",
+    "title2": "          The Staffchange Advantage: A Personalized Approach to Your Job Search Journey",
+    "description2": "The Staffchange Company and the Hansavest Group comprise an energetic team of professionals specializing in employment services. Our experts possess years of experience working with companies of diverse scales and industries, and they understand the key elements of a successful job search. We serve all parties involved - from candidates seeking employment to employers in search of talented individuals. Our objective is to facilitate perfect matches that yield maximum benefits for both sides. We endeavor to provide a personalized and professional approach for each client, ensuring high-quality services and offering tailor-made solutions."
+  },
+  "workAt": {
+    "title1": "Staffchange: Partnership for Progress",
+    "description1": "Providing client-oriented workforce solutions aimed at bolstering your business",
+    "title2": "Join our team!",
+    "description2": " At our company, we believe in diversity. We embrace different opinions\n        and perspectives, because the more perspectives there are, the more\n        ideas there are, and the better the solution will be. We are a team of\n        professionals who are unified by our shared goal of enhancing the\n        development of the industrial sector. If you are interested in joining\n        us, don&apos;t hesitate to reach out. Let us know in which field you can\n        contribute.",
+    "teamPrinciples": {
+      "1": {
+        "title": "WE VALUE EVERY MEMBER",
+        "content": "We believe in teamwork and value determination, while taking into account the uniqueness of every team member."
+      },
+      "2": {
+        "title": "WE NUTURE AND CHERISH TALENT",
+        "content": "Through training and mentoring, we support development within the enterprise."
+      },
+      "3": {
+        "title": "WE ENJOY EACH OTHER’S COMPANY",
+        "content": "We organise staff outings and activity days to develop team spirit and good relationships among our employees."
+      }
+    }
+  }
+}

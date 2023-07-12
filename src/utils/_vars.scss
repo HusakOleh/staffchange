@@ -1,0 +1,28 @@
+$titleFont: --titleFont, sans-serif;
+$textFont: --textFont, sans-serif;
+
+$max-width: 2560px;
+$transition: all 0.3s ease-out;
+$transform: scale(1.1);
+
+$typography-color1: #424242;
+$typography-color2: #485460;
+$typography-color3: #14387f;
+$typography-color4: #2a7acb;
+$typography-color5: #fff;
+$typography-color6: #aaa9a9;
+
+$main-bg-color: #fff;
+$main-bg-color2: #f3f3f3;
+
+$warning-color: #ff0000;
+
+$logo-height: 120px;
+$logo-width: 170px;
+
+$box-shadow: -2px 2px 4px 0px $typography-color1;
+$box-shadow__nav: 0px 10px 10px 0 $typography-color2;
+$focus-drop-shadow: drop-shadow(0px 0px 0.7px $typography-color2);
+$border: 1px solid $typography-color6;
+
+$input-height: 2.5rem;

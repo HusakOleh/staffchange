@@ -1,0 +1,26 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.WorkAtSendData {
+  background: var.$main-bg-color2;
+  @extend %horizontal-padding__page-item;
+  @extend %vertical-padding__page-item;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  &__title {
+    color: var.$typography-color4;
+  }
+
+  &__subTitle {
+    color: var.$typography-color1;
+  }
+
+  @include mixin.onDesktop {
+    gap: 3rem;
+  }
+}

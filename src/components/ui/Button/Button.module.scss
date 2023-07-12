@@ -1,0 +1,25 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.button {
+  @extend %vertical-padding;
+  @extend %horizontal-padding__button;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: var.$transition;
+
+  &_primary {
+    color: var.$typography-color5;
+    background: var.$typography-color4;
+  }
+
+  &_warning {
+    color: var.$typography-color5;
+    background: var.$warning-color;
+  }
+
+  &:hover {
+    box-shadow: var.$box-shadow;
+  }
+}

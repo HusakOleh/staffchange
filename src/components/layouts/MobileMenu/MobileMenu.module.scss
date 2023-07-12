@@ -1,0 +1,53 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.mobileMenu {
+  width: 90vw;
+  height: 100vh;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  transform: translateX(90vw);
+
+  transition: var.$transition;
+
+  display: flex;
+  flex-direction: column;
+
+  &_visible {
+    transform: translateX(0);
+  }
+
+  &__header {
+    pointer-events: none;
+    width: 100%;
+    height: var.$logo-height;
+    @extend %vertical-padding__header;
+    box-sizing: content-box;
+  }
+
+  &__mainContent {
+    background: var.$main-bg-color;
+    box-shadow: var.$box-shadow__nav;
+
+    @extend %horizontal-padding;
+    @extend %vertical-padding__header;
+
+    flex-grow: 1;
+  }
+
+  @include mixin.onDesktop {
+    display: none;
+  }
+}
+
+.mobileMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  align-items: flex-end;
+}

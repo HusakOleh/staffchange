@@ -1,0 +1,42 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "type": "phone",
+      "text": "+372 539 356 39",
+      "link": "tel:+37253935639"
+    },
+    {
+      "id": 2,
+      "type": "mail",
+      "text": "info@staffchange.com",
+      "link": "mailto:rostyk@staffchange.com"
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "country": "Poland",
+      "city": "Warszawa",
+      "address": "ul. BOKSERSKA \n nr 1, lok. 304",
+      "link": "https://www.google.com/maps?output=search&q=ul.+BOKSERSKA+nr+1,+lok.+304&entry=mc&sa=X&ved=2ahUKEwi928npvs__AhXTnYsKHcetB-sQ0pQJegQICRAB",
+      "phone": "+485 132 384 50"
+    },
+    {
+      "id": 2,
+      "country": "Eesti",
+      "city": "Pärnu",
+      "address": "Suur-Jõe 46a",
+      "link": "https://goo.gl/maps/JiacRGMgkZG6Q2sB7",
+      "phone": "+372 5350 70 28"
+    },
+    {
+      "id": 3,
+      "country": "Kyrgyz Republic",
+      "city": "Bishkek",
+      "address": "Jil gorodok Sovmin, 1A, 10",
+      "link": "https://goo.gl/maps/q1ookj69BDkKeU8i7",
+      "phone": "+996 708 912 510"
+    }
+  ]
+}

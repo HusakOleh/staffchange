@@ -1,0 +1,30 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+@use '../../../utils/typography';
+
+.wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  @extend .typography_input;
+
+  & > input {
+    font-size: 1em;
+
+    border: none;
+    color: var.$typography-color2;
+
+    &::placeholder {
+      color: var.$typography-color6;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

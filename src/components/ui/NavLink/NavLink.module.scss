@@ -1,0 +1,38 @@
+@use '../../../utils/vars' as var;
+@use '../../../utils/mixins' as mixin;
+
+.navLink {
+  position: relative;
+  color: var.$typography-color2;
+  padding: 0.5em 0;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 1px;
+    width: 0;
+    background: var.$typography-color4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var.$transition;
+  }
+
+  &:hover,
+  &:focus {
+    color: var.$typography-color4;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &_active {
+    color: var.$typography-color4;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

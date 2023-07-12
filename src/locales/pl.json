@@ -1,0 +1,43 @@
+{
+  "navLink": {
+    "main": "Główna",
+    "about": "O nas",
+    "workAt": "Pracuj w Staffchange"
+  },
+  "footer": {
+    "contact": "Skontaktuj się z nami"
+  },
+  "main": {
+    "slogan": "Zapewniamy wykwalifikowanych pracowników we wszystkich dziedzinach",
+    "title1": "Witamy w Staffchange: to grupa Hansavest",
+    "description1": "Witamy w Staffchange - Twoim zaufanym partnerze w poszukiwaniu pracy i zatrudnieniu! Jesteśmy firmą, która harmonizuje potrzeby pracodawców i kandydatów w dziedzinie zatrudnienia. Naszą misją jest pomoc wykwalifikowanym profesjonalistom w realizacji swoich umiejętności, a młodym talentom w znalezieniu idealnej pracy i podniesieniu swojego potencjału kariery. Oferujemy innowacyjne rozwiązania i indywidualne wsparcie, aby zapewnić każdemu z naszych klientów udane zatrudnienie. Dołącz do naszej społeczności zatrudnienia już dziś i rozpocznij swoją drogę do wzrostu i osiągnięć zawodowych!",
+    "title2": "Twój most do sukcesu: Staffchange",
+    "description2": "Firma Staffchange jest liderem na rynku zatrudnienia, specjalizującym się w znajdowaniu idealnych ofert pracy dla kandydatów z różnych sektorów. Naszą misją jest świadczenie usług wysokiej jakości w zakresie poszukiwania pracy, dostosowując potrzeby kandydatów do potrzeb pracodawców. Współpracujemy z szerokim spektrum firm i organizacji, aby zapewnić różnorodność ofert pracy w różnych branżach, od technologii informacyjnych i marketingu po finanse i medycynę. Nasz zespół profesjonalistów jest zawsze gotowy, aby udzielić Ci osobistego wsparcia i porady w znalezieniu pracy, która będzie zgodna z Twoimi celami i ambicjami. Dołącz do naszej społeczności zatrudnienia już dziś i pozwól nam pomóc Ci w następnym kroku w karierze!"
+  },
+  "about": {
+    "title1": "Staffchange: partnerstwo Grupy Hansavest dla postępu",
+    "description1": "Dostarczamy rozwiązania zorientowane na klienta, mające na celu zwiększenie efektywności Twojego biznesu",
+    "title2": "Przewaga Staffchange: Indywidualne podejście do Twojej drogi poszukiwania pracy",
+    "description2": "Firma Staffchange i Grupa Hansavest to energiczny zespół profesjonalistów specjalizujących się w usługach zatrudnienia. Nasi eksperci mają wieloletnie doświadczenie w pracy z firmami o różnej skali i z różnych branż, i rozumieją kluczowe elementy udanego poszukiwania pracy. Obsługujemy wszystkie strony - od kandydatów szukających pracy do pracodawców szukających utalentowanych osób. Naszym celem jest doprowadzenie do idealnych par, które przynoszą maksymalne korzyści obu stronom. Dążymy do zapewnienia indywidualnego i profesjonalnego podejścia dla każdego klienta, gwarantując usługi najwyższej jakości i oferując rozwiązania na miarę."
+  },
+  "workAt": {
+    "title1": "Staffchange: Partnerstwo dla Postępu",
+    "description1": "Dostarczamy rozwiązania zorientowane na klienta, mające na celu zwiększenie efektywności Twojego biznesu",
+    "title2": "Dołącz do naszego zespołu!",
+    "description2": " W naszej firmie wierzymy w różnorodność. Szanujemy różne opinie i punkty widzenia, ponieważ im więcej perspektyw, tym więcej pomysłów, a tym lepsze rozwiązanie. Jesteśmy zespołem profesjonalistów, których łączy wspólny cel rozwoju sektora przemysłowego. Jeżeli jesteś zainteresowany dołączeniem do nas, nie wahaj się skontaktować. Daj nam znać, w jakiej dziedzinie możesz przyczynić się do naszej firmy.",
+    "teamPrinciples": {
+      "1": {
+        "title": "CENIMY KAŻDEGO CZŁONKA",
+        "content": "Wierzymy w pracę zespołową i cenimy determinację, biorąc pod uwagę unikalność każdego członka zespołu."
+      },
+      "2": {
+        "title": "PIELĘGNUJEMY I CHERNIAMY TALENT",
+        "content": "Poprzez szkolenia i mentoring, wspieramy rozwój w przedsiębiorstwie."
+      },
+      "3": {
+        "title": "CIESZYMY SIĘ Z KOMPANII INNYCH",
+        "content": "Organizujemy wyjścia pracowników i dni aktywności, aby rozwijać ducha zespołu i dobre relacje między naszymi pracownikami."
+      }
+    }
+  }
+}

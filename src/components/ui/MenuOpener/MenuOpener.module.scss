@@ -1,0 +1,48 @@
+@use '../../../utils/vars' as var;
+@use '../../../utils/mixins' as mixin;
+
+$gap: 4px;
+$item-height: 3px;
+$translateY: calc($gap + $item-height);
+
+.menuOpener {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  justify-content: space-between;
+  width: 24px;
+  justify-self: end;
+  height: max-content;
+
+  z-index: 2;
+
+  &__item {
+    height: $item-height;
+    width: 100%;
+    background: var.$typography-color2;
+    transition: var.$transition;
+
+    &_1 {
+      transform: translateY($translateY) rotateZ(45deg);
+    }
+    &_2 {
+      opacity: 0;
+    }
+    &_3 {
+      transform: translateY(-$translateY) rotateZ(-45deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    & > * {
+      background: var.$typography-color3;
+    }
+  }
+
+  @include mixin.onDesktop {
+    display: none;
+  }
+}

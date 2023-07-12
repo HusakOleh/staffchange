@@ -1,0 +1,43 @@
+{
+  "navLink": {
+    "main": "Pealeht",
+    "about": "Meist",
+    "workAt": "Tööta Staffchange'is"
+  },
+  "footer": {
+    "contact": "Võta meiega ühendust"
+  },
+  "main": {
+    "slogan": "Pakume kvalifitseeritud töötajaid kõigis valdkondades",
+    "title1": "Tere tulemast Staffchange'i: see on Hansavest Group",
+    "description1": "Tere tulemast Staffchange'i - teie usaldusväärne partner tööotsingul ja tööhõives! Oleme ettevõte, mis on pühendunud tööandjate ja kandidaatide vajaduste harmoneerimisele tööhõive valdkonnas. Meie missiooniks on aidata kvalifitseeritud professionaalidel oma oskusi realiseerida ja noortel talentidel leida oma ideaalne töökoht ning tõsta oma karjäärivõimalusi. Pakume innovaatilisi lahendusi ja personaalset tuge, tagamaks igaühele meie klientidest eduka töölevõtmise. Liitu meie tööhõive kogukonnaga juba täna ja alusta oma teekonda karjääri kasvu ja saavutusteni!",
+    "title2": "Teie sild edu juurde: Staffchange",
+    "description2": "Ettevõte Staffchange on tööturu liider, spetsialiseerudes ideaalsete tööpakkumiste leidmisele kandidaatidele erinevates sektorites. Meie missiooniks on pakkuda kõrge kvaliteediga tööotsingu teenuseid, ühildades kandidaatide vajadused tööandjate vajadustega. Me töötame koos laia valiku ettevõtete ja organisatsioonidega, tagamaks erinevate tööstusharude, alates infotehnoloogiast ja turundusest kuni rahanduse ja meditsiinini, tööpakkumiste mitmekesisust. Meie professionaalide meeskond on alati valmis pakkuma teile personaalset tuge ja nõu, aidates teil leida tööd, mis vastab teie eesmärkidele ja ambitsioonidele. Liitu meie tööhõive kogukonnaga juba täna ja lase meil aidata sul teha oma järgmine karjääri samm!"
+  },
+  "about": {
+    "title1": "Staffchange: Hansavest Group'i partnerlus edusammude nimel",
+    "description1": "Pakume klientidele orienteeritud tööjõulahendusi, mis aitavad teie äri kasvatada",
+    "title2": "Staffchange'i eelis: isikupärastatud lähenemine teie tööotsingute teekonnale",
+    "description2": "Staffchange'i ettevõte ja Hansavest Group koosnevad energilisest professionaalide meeskonnast, kes spetsialiseeruvad tööhõive teenustele. Meie eksperdid omavad aastatepikkust kogemust töötamisel erineva suurusega ja erinevatest tööstusharudest pärit ettevõtetega ning mõistavad eduka tööotsingu võtmeaspekte. Me töötame kõigi osapooltega - alates tööotsijatest kuni tööandjateni, kes otsivad andekaid töötajaid. Meie eesmärgiks on kokku tuua ideaalsed paarid, et mõlemad pooled saaksid maksimaalset kasu. Me püüdleme selle poole, et pakkuda igale kliendile personaalset ja professionaalset lähenemist, pakkudes kõrge kvaliteediga teenuseid ja pakkudes individuaalseid lahendusi."
+  },
+  "workAt": {
+    "title1": "Staffchange: partnerlus edusammude nimel",
+    "description1": "Pakume klientidele orienteeritud tööjõulahendusi, mis aitavad teie äri kasvatada",
+    "title2": "Liitu meie meeskonnaga!",
+    "description2": "Meie ettevõttes usume mitmekesisusse. Me hindame erinevaid arvamusi ja perspektiive, sest mida rohkem on perspektiive, seda rohkem on ideid ja seda parem on lahendus. Me oleme professionaalide meeskond, keda ühendab ühine eesmärk tööstussektori arendamiseks. Kui oled huvitatud liitumisest meiega, siis võta meiega ühendust. Anna meile teada, millises valdkonnas saaksid panustada.",
+    "teamPrinciples": {
+      "1": {
+        "title": "ME HINDAME IGAT LIIKMET",
+        "content": "Me usume meeskonnatöösse ja hindame püsivust, võttes arvesse iga meeskonnaliikme ainulaadsust."
+      },
+      "2": {
+        "title": "ME TOETAME JA HOOLITSEME ANDEREGA",
+        "content": "Koolituse ja mentorluse kaudu toetame arengut ettevõttes."
+      },
+      "3": {
+        "title": "ME NAUDIME ÜKSTEISE SELTSKONDA",
+        "content": "Korraldame töötajatele väljasõite ja tegevuspäevi, et arendada meeskonnatöö vaimu ja head suhteid meie töötajate vahel."
+      }
+    }
+  }
+}

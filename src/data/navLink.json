@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "main",
+    "link": "/"
+  },
+  {
+    "id": 2,
+    "name": "about",
+    "link": "/about"
+  },
+  {
+    "id": 3,
+    "name": "workAt",
+    "link": "/workAt"
+  }
+]

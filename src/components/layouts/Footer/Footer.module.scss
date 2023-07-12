@@ -1,0 +1,37 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.footer {
+  @extend %vertical-padding__footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__copyright {
+    color: var.$typography-color1;
+  }
+
+  @include mixin.onDesktop {
+    align-items: stretch;
+
+    &__info {
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+      gap: 8rem;
+    }
+
+    &__copyright {
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.form {
+  width: 100%;
+  max-width: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  @include mixin.onDesktop {
+    gap: 1.5rem;
+  }
+}

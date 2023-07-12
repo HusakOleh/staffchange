@@ -1,0 +1,85 @@
+@use 'mixins' as mixin;
+
+%horizontal-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &__page-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  &__form-input {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  &__button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include mixin.onTablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include mixin.onDesktop {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    &__page-item {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+}
+
+%vertical-padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  &__header {
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__footer {
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__title-page {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__page-item {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  @include mixin.onTablet {
+    &__header {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &__footer {
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+
+    &__title-page {
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  @include mixin.onDesktop {
+    &__header {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  &__title {
+    color: var.$typography-color1;
+    align-self: center;
+  }
+
+  &__phones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  &__phonesLink {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    color: var.$typography-color4;
+    transition: var.$transition;
+
+    &:hover {
+      transform: var.$transform;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  &__addressItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__addressTitle {
+    color: var.$typography-color4;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__addressDescription {
+    color: var.$typography-color1;
+  }
+
+  @include mixin.onDesktop {
+    //background: pink;
+    //width: max-content;
+
+    &__contacts {
+      flex-direction: row;
+      gap: 8rem;
+    }
+
+    &__title {
+      align-self: flex-start;
+    }
+
+    &__address {
+      //flex-basis: 50%;
+    }
+
+    &__phones {
+      //flex-basis: 50%;
+    }
+  }
+}
