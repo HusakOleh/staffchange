@@ -1,0 +1,35 @@
+@use '../../../utils/mixins' as mixin;
+@use '../../../utils/vars' as var;
+@use '../../../utils/placeholders';
+
+.wrap {
+  width: 100%;
+}
+
+.mySwiper {
+  padding: 10px;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 40px;
+  }
+}
+
+.video {
+  width: 100%;
+  position: relative;
+
+  padding-top: 60%;
+
+}
+
+.iFrame {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,95 @@
+@use '../utils/reset';
+@use '../utils/vars' as var;
+@use '../utils/mixins' as mixin;
+@use '../utils/placeholders';
+@use '../utils/typography';
+
+:root {
+  --titleFont: 'Open Sans';
+  --textFont: 'Montserrat';
+}
+
+.bodyLock {
+  position: fixed;
+  overflow: hidden;
+  transition: var.$transition;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.mainContent {
+  flex-grow: 1;
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: var.$max-width;
+  margin: 0 auto;
+
+  &_padding {
+    @extend %horizontal-padding;
+    @extend .mainContainer;
+  }
+}
+
+.logo {
+  justify-self: center;
+  align-self: center;
+  flex-shrink: 0;
+  height: var.$logo-height;
+  width: var.$logo-width;
+  transition: var.$transition;
+
+  & > img {
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    transform: var.$transform;
+  }
+}
+
+.form-input {
+  color: var.$typography-color2;
+  border: var.$border;
+  @extend %vertical-padding;
+  @extend %horizontal-padding__form-input;
+
+  background: var.$main-bg-color;
+  transition: var.$transition;
+
+  &_warning {
+    border-color: var.$warning-color;
+  }
+
+  &::placeholder {
+    color: var.$typography-color6;
+  }
+
+  &:focus-visible,
+  &:focus-within {
+    outline: none;
+    box-shadow: var.$box-shadow;
+  }
+
+  &__warning {
+    position: absolute;
+    top: -1.1em;
+    color: var.$warning-color;
+    height: 1.1em;
+  }
+}
