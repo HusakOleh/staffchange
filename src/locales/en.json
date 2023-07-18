@@ -12,7 +12,7 @@
     "title1": "Welcome to Staffchange: this is a Hansavest Group",
     "description1": "      Welcome to Staffchange - your trusted partner in job search and employment! We are a company dedicated to harmonizing the needs of employers and candidates in the field of employment.\n            Our mission is to help qualified professionals realize their skills, and to aid young talents in finding their ideal job and elevate their career potential. We offer innovative solutions and personalized support to ensure successful employment for each of our clients.\n            Join our employment community today and start your journey to career growth and achievements!",
     "title2": "            Your Bridge to Success: Staffchange",
-    "description2": "            The company Staffchange is a leader in the employment market, specializing in finding ideal job placements for candidates across various sectors. Our mission is to provide high-quality job search services, aligning the needs of candidates with the needs of employers.\n\n            We work with a broad spectrum of companies and organizations to ensure diversity of vacancies in different industries, from information technology and marketing to finance and medicine. Our team of professionals is always ready to provide you with personal support and advice to help you find a job that aligns with your goals and ambitions.\n\n            Join our employment community today and let us help you make your next career move!"
+    "description2": "The company Staffchange is a leader in the employment market, specializing in finding ideal job placements for candidates across various sectors. Our mission is to provide high-quality job search services, aligning the needs of candidates with the needs of employers.\n\n            We work with a broad spectrum of companies and organizations to ensure diversity of vacancies in different industries, from information technology and marketing to finance and medicine. Our team of professionals is always ready to provide you with personal support and advice to help you find a job that aligns with your goals and ambitions.\n\n            Join our employment community today and let us help you make your next career move!"
   },
   "about": {
     "title1": "Staffchange: a Hansavest Group Partnership for Progress",
@@ -25,19 +25,33 @@
     "description1": "Providing client-oriented workforce solutions aimed at bolstering your business",
     "title2": "Join our team!",
     "description2": " At our company, we believe in diversity. We embrace different opinions\n        and perspectives, because the more perspectives there are, the more\n        ideas there are, and the better the solution will be. We are a team of\n        professionals who are unified by our shared goal of enhancing the\n        development of the industrial sector. If you are interested in joining\n        us, don&apos;t hesitate to reach out. Let us know in which field you can\n        contribute.",
-    "teamPrinciples": {
-      "1": {
+    "teamPrinciples": [
+      {
+        "id": 1,
         "title": "WE VALUE EVERY MEMBER",
         "content": "We believe in teamwork and value determination, while taking into account the uniqueness of every team member."
       },
-      "2": {
+      {
+        "id": 2,
         "title": "WE NUTURE AND CHERISH TALENT",
         "content": "Through training and mentoring, we support development within the enterprise."
       },
-      "3": {
+      {
+        "id": 3,
         "title": "WE ENJOY EACH OTHER’S COMPANY",
         "content": "We organise staff outings and activity days to develop team spirit and good relationships among our employees."
       }
+    ],
+    "sendData": {
+      "title": "Join Staffchange",
+      "subtitle": "Don’t hesitate to send us your CV. We will contact you shortly.",
+      "name": "name",
+      "textArea": "additional info",
+      "fileDescription": "Add your CV",
+      "fileStatus": "No file chosen",
+      "fileLimit": "Max. file size: 2 MB.",
+      "fileButton": "choose file",
+      "submit": "send"
     }
   }
 }

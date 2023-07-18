@@ -1,8 +1,10 @@
 import style from './InputFile.module.scss';
 import { ChangeEvent, useState, useRef, MouseEventHandler } from 'react';
-import { setStateType } from '../../../types';
-import { fileType } from '../../../types';
-import Button from '../Button/Button';
+import { setStateType } from '@/types';
+import { fileType } from '@/types';
+import Button from '@/components/ui/Button/Button';
+import { useRouter } from 'next/router';
+import { getLocalizedText } from '@/helpers/getLocalizedText';
 
 type EventType = ChangeEvent<HTMLInputElement>;
 
@@ -12,8 +14,13 @@ interface Props {
 }
 
 export default function InputFile({ value, setValue }: Props) {
+  const { locale } = useRouter();
+  const t = getLocalizedText(locale);
+
+  const fileStatus = t.workAt.sendData.fileStatus;
+
   const inputRef = useRef<HTMLInputElement>(null);
-  const [fileName, setFileName] = useState('No file chosen');
+  const [fileName, setFileName] = useState(`${fileStatus}`);
 
   const handleButtonClick: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.preventDefault();
@@ -30,10 +37,12 @@ export default function InputFile({ value, setValue }: Props) {
 
   return (
     <div className={style.wrap}>
-      <p className={'typography_h5'}>Add your CV</p>
+      <p className={'typography_h5'}>{t.workAt.sendData.fileDescription}</p>
 
       <div className={style.inputWrap}>
-        <Button onClick={handleButtonClick}>Choose File</Button>
+        <Button onClick={handleButtonClick}>
+          {t.workAt.sendData.fileButton}
+        </Button>
 
         <p className={'typography_text'}>{fileName}</p>
 
@@ -44,7 +53,7 @@ export default function InputFile({ value, setValue }: Props) {
         />
       </div>
 
-      <p className={'typography_text'}>Max. file size: 2 MB.</p>
+      <p className={'typography_text'}>{t.workAt.sendData.fileLimit}</p>
     </div>
   );
 }

@@ -1,7 +1,12 @@
 import style from './WorkAtSendData.module.scss';
-import SendForm from '../SendForm/SendForm';
+import SendForm from '@/components/layouts/SendForm/SendForm';
+import { useRouter } from 'next/router';
+import { getLocalizedText } from '@/helpers/getLocalizedText';
 
 export default function WorkAtSendData() {
+  const { locale } = useRouter();
+  const t = getLocalizedText(locale);
+
   return (
     <div className={style.WorkAtSendData}>
       <h5
@@ -10,7 +15,7 @@ export default function WorkAtSendData() {
           typography_h6
         `}
       >
-        Join Hansavest
+        {t.workAt.sendData.title}
       </h5>
       <h5
         className={`
@@ -18,7 +23,7 @@ export default function WorkAtSendData() {
           typography_h4
         `}
       >
-        Don’t hesitate to send us your CV. We will contact you shortly.
+        {t.workAt.sendData.subtitle}
       </h5>
 
       <SendForm />

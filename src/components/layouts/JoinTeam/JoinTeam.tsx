@@ -1,14 +1,20 @@
 import { Fragment } from 'react';
 import style from './JoinTeam.module.scss';
-import teamPrinciples from '../../../data/teamPrinciples.json';
-import ListItemWithCheck from '../../ui/ListItemWithCheck/ListItemWithCheck';
+import ListItemWithCheck from '@/components/ui/ListItemWithCheck/ListItemWithCheck';
+import { useRouter } from 'next/router';
+import { getLocalizedText } from '@/helpers/getLocalizedText';
 
 export default function JoinTeam() {
+  const { locale } = useRouter();
+  const t = getLocalizedText(locale);
+
+  const teamPrinciples = t.workAt.teamPrinciples;
+
   return (
     <div className={style.wrap}>
-      <h2 className={`typography_h2 ${style.title}`}>{'TEST'}</h2>
+      <h2 className={`typography_h2 ${style.title}`}>{t.workAt.title2}</h2>
 
-      <p className={`typography_text`}>{'TEST'}</p>
+      <p className={`typography_text`}>{t.workAt.description2}</p>
 
       <ul
         className={`
@@ -27,7 +33,7 @@ export default function JoinTeam() {
                     ${style.list__title}
                   `}
                   >
-                    {'TEST'}
+                    {el.title}
                   </h3>
                   <p
                     className={`
@@ -35,7 +41,7 @@ export default function JoinTeam() {
                     ${style.list__content}
                   `}
                   >
-                    {'TEST'}
+                    {el.content}
                   </p>
                 </div>
               </ListItemWithCheck>

@@ -25,19 +25,33 @@
     "description1": "Dostarczamy rozwiązania zorientowane na klienta, mające na celu zwiększenie efektywności Twojego biznesu",
     "title2": "Dołącz do naszego zespołu!",
     "description2": " W naszej firmie wierzymy w różnorodność. Szanujemy różne opinie i punkty widzenia, ponieważ im więcej perspektyw, tym więcej pomysłów, a tym lepsze rozwiązanie. Jesteśmy zespołem profesjonalistów, których łączy wspólny cel rozwoju sektora przemysłowego. Jeżeli jesteś zainteresowany dołączeniem do nas, nie wahaj się skontaktować. Daj nam znać, w jakiej dziedzinie możesz przyczynić się do naszej firmy.",
-    "teamPrinciples": {
-      "1": {
-        "title": "CENIMY KAŻDEGO CZŁONKA",
-        "content": "Wierzymy w pracę zespołową i cenimy determinację, biorąc pod uwagę unikalność każdego członka zespołu."
+    "teamPrinciples": [
+      {
+        "id": 1,
+        "title": "CENIMY KAŻDEGO CZŁONKA ZESPOŁU",
+        "content": "Wierzymy w pracę zespołową i cenimy determinację, jednocześnie szanując unikalność każdego członka zespołu."
       },
-      "2": {
-        "title": "PIELĘGNUJEMY I CHERNIAMY TALENT",
-        "content": "Poprzez szkolenia i mentoring, wspieramy rozwój w przedsiębiorstwie."
+      {
+        "id": 2,
+        "title": "ROZWIJAMY I PIELĘGNUJEMY TALENTY",
+        "content": "Poprzez szkolenia i mentoring wspieramy rozwój w przedsiębiorstwie."
       },
-      "3": {
-        "title": "CIESZYMY SIĘ Z KOMPANII INNYCH",
-        "content": "Organizujemy wyjścia pracowników i dni aktywności, aby rozwijać ducha zespołu i dobre relacje między naszymi pracownikami."
+      {
+        "id": 3,
+        "title": "CZESZCIMY SOBIE TOWARZYSTWO",
+        "content": "Organizujemy wyjścia służbowe i dni aktywności, aby rozwijać ducha zespołowego i dobre relacje między naszymi pracownikami."
       }
+    ],
+    "sendData": {
+      "title": "Dołącz do Staffchange",
+      "subtitle": "Nie wahaj się przesłać nam swojego CV. Skontaktujemy się z Tobą wkrótce.",
+      "name": "imię",
+      "textArea": "Dodatkowe informacje",
+      "fileDescription": "Dodaj swoje CV",
+      "fileStatus": "Nie wybrano pliku",
+      "fileLimit": "Maksymalny rozmiar pliku: 2 MB.",
+      "fileButton": "wybierz plik",
+      "submit": "wyślij"
     }
   }
 }

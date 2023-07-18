@@ -1,6 +1,35 @@
-import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
+import { ComponentType } from 'react';
+import '../styles/globals.scss';
+import Header from '../components/layouts/Header/Header';
+import Footer from '../components/layouts/Footer/Footer';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+interface Props {
+  Component: ComponentType;
+  pageProps: any;
 }
+
+function MyApp({ Component, pageProps }: Props) {
+  return (
+    <>
+      <div
+        className={`
+          container
+        `}
+      >
+        <Header />
+
+        <main
+          className={`
+            mainContainer
+            mainContent
+          `}
+        >
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+export default MyApp;

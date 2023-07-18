@@ -1,6 +1,6 @@
 import style from './Footer.module.scss';
 import Link from 'next/link';
-import ContactUsFooter from '../ContactUsFooter/ContactUsFooter';
+import ContactUsFooter from '@/components/layouts/ContactUsFooter/ContactUsFooter';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

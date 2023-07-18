@@ -1,15 +1,19 @@
 import React, { useState, MouseEvent, FormEventHandler } from 'react';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 import style from './SendForm.module.scss';
-import Input from '../../ui/Input/Input';
-import InputPhone from '../../ui/InputPhone/InputPhone';
-import TextArea from '../../ui/TextArea/TextArea';
-import InputFile from '../../ui/InputFile/InputFile';
-import Button from '../../ui/Button/Button';
-
-import { fileType } from '../../../types';
+import Input from '@/components/ui/Input/Input';
+import InputPhone from '@/components/ui/InputPhone/InputPhone';
+import TextArea from '@/components/ui/TextArea/TextArea';
+import InputFile from '@/components/ui/InputFile/InputFile';
+import Button from '@/components/ui/Button/Button';
+import { fileType } from '@/types';
+import { useRouter } from 'next/router';
+import { getLocalizedText } from '@/helpers/getLocalizedText';
 
 export default function SendForm() {
+  const { locale } = useRouter();
+  const t = getLocalizedText(locale);
+
   const [name, setName] = useState('');
   const [phone, setPhone] = useState<string | undefined>('');
   const [email, setEmail] = useState('');
@@ -89,7 +93,7 @@ export default function SendForm() {
       <Input
         type={'text'}
         value={name}
-        placeholder={'Name'}
+        placeholder={t.workAt.sendData.name}
         setValue={setName}
       />
       <InputPhone
@@ -107,7 +111,7 @@ export default function SendForm() {
 
       <TextArea
         value={info}
-        placeholder={'Additional info'}
+        placeholder={t.workAt.sendData.textArea}
         setValue={setInfo}
       />
 
@@ -116,7 +120,7 @@ export default function SendForm() {
         setValue={setFile}
       />
 
-      <Button type="submit">Send</Button>
+      <Button type="submit">{t.workAt.sendData.submit}</Button>
     </form>
   );
 }

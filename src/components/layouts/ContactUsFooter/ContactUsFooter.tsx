@@ -1,11 +1,15 @@
 import style from './ContactUsFooter.module.scss';
-
-import contacts from '../../../data/contacts.json';
+import contacts from '@/data/contacts.json';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { getLocalizedText } from '@/helpers/getLocalizedText';
 
-import { contactIcons } from '../../../data/icons';
+import { contactIcons } from '@/data/icons';
 
 export default function ContactUsFooter() {
+  const { locale } = useRouter();
+  const t = getLocalizedText(locale);
+
   return (
     <div className={style.contactUs}>
       <h3
@@ -14,7 +18,7 @@ export default function ContactUsFooter() {
           ${style.contactUs__title}
         `}
       >
-        {'TEST'}
+        {t.footer.contact}
       </h3>
 
       <div

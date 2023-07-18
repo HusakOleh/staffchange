@@ -69,8 +69,8 @@
   }
 
   @include mixin.onDesktop {
-    //background: pink;
-    //width: max-content;
+    width: max-content;
+    margin: 0 auto;
 
     &__contacts {
       flex-direction: row;

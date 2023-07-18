@@ -9,6 +9,8 @@
   align-items: center;
   gap: 2rem;
 
+  width: max-content;
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -18,9 +20,11 @@
 
   &__copyright {
     color: var.$typography-color1;
+    align-self: flex-start;
   }
 
   @include mixin.onDesktop {
+    width: 100%;
     align-items: stretch;
 
     &__info {

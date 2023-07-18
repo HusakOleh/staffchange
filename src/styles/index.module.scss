@@ -2,10 +2,7 @@
 @use '../utils/mixins' as mixin;
 @use '../utils/placeholders';
 
-//noinspection SassScssResolvedByNameOnly
 .wrap {
-  //height: 100px;
-  //background: green;
   display: flex;
   flex-direction: column;
   gap: 2rem;

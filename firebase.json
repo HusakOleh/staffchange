@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "staffchange2",
+    "site": "staffchange-a4354",
     "source": ".",
     "ignore": [
       "firebase.json",
@@ -8,7 +8,7 @@
       "**/node_modules/**"
     ],
     "frameworksBackend": {
-      "region": "us-central1",
+      "region": "europe-west1",
       "minInstances": 0,
       "maxInstances": 5,
       "memory": "1GiB"

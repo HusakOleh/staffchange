@@ -25,19 +25,33 @@
     "description1": "Pakume klientidele orienteeritud tööjõulahendusi, mis aitavad teie äri kasvatada",
     "title2": "Liitu meie meeskonnaga!",
     "description2": "Meie ettevõttes usume mitmekesisusse. Me hindame erinevaid arvamusi ja perspektiive, sest mida rohkem on perspektiive, seda rohkem on ideid ja seda parem on lahendus. Me oleme professionaalide meeskond, keda ühendab ühine eesmärk tööstussektori arendamiseks. Kui oled huvitatud liitumisest meiega, siis võta meiega ühendust. Anna meile teada, millises valdkonnas saaksid panustada.",
-    "teamPrinciples": {
-      "1": {
-        "title": "ME HINDAME IGAT LIIKMET",
-        "content": "Me usume meeskonnatöösse ja hindame püsivust, võttes arvesse iga meeskonnaliikme ainulaadsust."
+    "teamPrinciples": [
+      {
+        "id": 1,
+        "title": "ME HINDAME IGA LIIGET",
+        "content": "Usume meeskonnatööd ja väärtustame sihikindlust, arvestades samal ajal igale meeskonnaliikmele omast ainulaadsust."
       },
-      "2": {
-        "title": "ME TOETAME JA HOOLITSEME ANDEREGA",
+      {
+        "id": 2,
+        "title": "ME HOOLDAME JA VÄÄRTUSTAME TALENTE",
         "content": "Koolituse ja mentorluse kaudu toetame arengut ettevõttes."
       },
-      "3": {
+      {
+        "id": 3,
         "title": "ME NAUDIME ÜKSTEISE SELTSKONDA",
-        "content": "Korraldame töötajatele väljasõite ja tegevuspäevi, et arendada meeskonnatöö vaimu ja head suhteid meie töötajate vahel."
+        "content": "Korraldame meeskonnaga väljasõite ja aktiivseid päevi, et arendada meeskonnavaimu ja hea suhteid meie töötajate vahel."
       }
+    ],
+    "sendData": {
+      "title": "Liitu Staffchange'iga",
+      "subtitle": "Ära kõhkle saatmast meile oma CV-d. Võtame sinuga peatselt ühendust.",
+      "name": "nimi",
+      "textArea": "lisainfo",
+      "fileDescription": "Lisa oma CV",
+      "fileStatus": "Ühtegi faili pole valitud",
+      "fileLimit": "Maksimaalne failisuurus: 2 MB.",
+      "fileButton": "vali fail",
+      "submit": "saada"
     }
   }
 }

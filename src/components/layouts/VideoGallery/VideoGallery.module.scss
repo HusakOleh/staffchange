@@ -4,16 +4,13 @@
 
 .wrap {
   width: 100%;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 
-.mySwiper {
-  padding: 10px;
-
-  &__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 40px;
+  @include mixin.onTablet {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 }
 
@@ -22,7 +19,6 @@
   position: relative;
 
   padding-top: 60%;
-
 }
 
 .iFrame {

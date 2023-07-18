@@ -1,18 +1,22 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
+import formidable from 'formidable';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+// Налаштування транспортера Nodemailer для відправки електронної пошти
+const transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'staffchange.adm@gmail.com',
+    pass: 'lbfcaqpassplebav',
+  },
+});
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
   if (req.method === 'POST') {
     const { subject, message } = req.body;
-
-    // Налаштування транспортера Nodemailer для відправки електронної пошти
-    const transporter = nodemailer.createTransport({
-      service: 'Gmail',
-      auth: {
-        user: 'staffchange.adm@gmail.com',
-        pass: 'lbfcaqpassplebav',
-      },
-    });
 
     // Налаштування деталей електронної пошти
     const mailOptions = {

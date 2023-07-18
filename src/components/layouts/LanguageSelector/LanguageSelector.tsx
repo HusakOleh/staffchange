@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react'
+import { ChangeEvent } from 'react';
 import { useRouter } from 'next/router';
 import style from './LanguageSelector.module.scss';
 
