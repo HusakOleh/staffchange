@@ -29,7 +29,7 @@ export default function Button({
         ${className}
         ${style.button}
         ${style[buttonVariant]}
-        typography_text
+        typography_button
       `}
       type={type}
       onClick={onClick}

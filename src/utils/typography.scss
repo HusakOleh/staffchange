@@ -74,6 +74,14 @@
     letter-spacing: 0;
   }
 
+  &_button {
+    font-family: var.$textFont;
+    font-size:0.9rem;
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: 0;
+  }
+
   &_warning {
     font-family: var.$textFont;
     font-size: 0.7rem;

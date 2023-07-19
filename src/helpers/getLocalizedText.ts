@@ -1,4 +1,4 @@
-import et from '../locales/et.json';
+import ee from '../locales/ee.json';
 import pl from '../locales/pl.json';
 import ua from '../locales/ua.json';
 import ru from '../locales/ru.json';
@@ -42,8 +42,8 @@ interface LocalizedText {
 export function getLocalizedText(locale: string | undefined) {
   let t: LocalizedText;
   switch (locale) {
-    case 'et':
-      t = et;
+    case 'ee':
+      t = ee;
       break;
     case 'pl':
       t = pl;

@@ -1,4 +1,5 @@
 @use 'mixins' as mixin;
+@use 'vars' as var;
 
 %horizontal-padding {
   padding-left: 1rem;
@@ -15,8 +16,8 @@
   }
 
   &__button {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   @include mixin.onTablet {
@@ -59,6 +60,11 @@
     padding-bottom: 4rem;
   }
 
+  &__button {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
   @include mixin.onTablet {
     &__header {
       padding-top: 1rem;
@@ -82,4 +88,10 @@
       padding-bottom: 1.5rem;
     }
   }
+}
+
+
+%placeholder {
+  color: var.$typography-color6;
+  text-transform: capitalize;
 }

@@ -3,7 +3,7 @@
 @use '../../../utils/placeholders';
 
 .button {
-  @extend %vertical-padding;
+  @extend %vertical-padding__button;
   @extend %horizontal-padding__button;
   text-transform: uppercase;
   font-weight: 700;

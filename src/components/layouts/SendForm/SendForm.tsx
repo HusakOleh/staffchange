@@ -73,7 +73,7 @@ export default function SendForm() {
     const localValidPhone = !!phone && isValidPhoneNumber(phone);
 
     if (localValidEmail && localValidPhone) {
-      sendEmail();
+      await sendEmail();
       console.log(name, phone, email, info, file);
       clearState();
     } else {

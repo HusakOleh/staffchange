@@ -32,13 +32,16 @@ export default function ContactUsFooter() {
         `}
         >
           {contacts.addresses.map((el) => (
-            <li key={el.id}>
+            <li
+              key={el.id}
+              className={`
+                ${style.contactUs__addressItem}
+              `}
+            >
               <Link
                 href={el.link}
                 target={'_blank'}
-                className={`
-                ${style.contactUs__addressItem}
-              `}
+
               >
                 <span
                   className={`

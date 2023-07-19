@@ -11,6 +11,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
+const devMail = 'husakoleh91@gmail.com';
+const prodMail = 'info@staffchange.com';
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
@@ -18,16 +22,20 @@ export default async function handler(
   if (req.method === 'POST') {
     const { subject, message } = req.body;
 
-    // Налаштування деталей електронної пошти
     const mailOptions = {
       from: 'staffchange.adm@gmail.com',
-      to: 'husakoleh91@gmail.com',
+      to: prodMail,
       subject: subject,
       text: message,
+      // attachments: [
+      //   {
+      //     filename: 'pdfFileName.pdf', // Назва файлу на приймачі
+      //     path: 'https://www.africau.edu/images/default/sample.pdf', // Шлях до завантаженого PDF-файлу на сервері
+      //   },
+      // ],
     };
 
     try {
-      // Відправка електронної пошти
       await transporter.sendMail(mailOptions);
       res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
@@ -38,3 +46,30 @@ export default async function handler(
     res.status(405).json({ message: 'Method not allowed' });
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

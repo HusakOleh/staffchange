@@ -1,7 +1,8 @@
 import { ReactNode, useEffect } from 'react';
 import style from './NavLink.module.scss';
 import Link from 'next/link';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
+
 
 interface Props {
   children: ReactNode;
@@ -9,7 +10,8 @@ interface Props {
 }
 
 export default function NavLink({ children, href }: Props) {
-  const isActive = usePathname() === href + '/';
+  const router = useRouter()
+  const isActive = router.pathname === href;
 
   return (
     <Link

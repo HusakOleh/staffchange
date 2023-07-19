@@ -14,4 +14,8 @@
   resize: none;
   @extend %horizontal-padding__form-input;
   padding-left: 0;
+
+  &::placeholder {
+    @extend %placeholder;
+  }
 }

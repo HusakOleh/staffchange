@@ -77,8 +77,7 @@ body {
   }
 
   &::placeholder {
-    color: var.$typography-color6;
-    text-transform: capitalize;
+    @extend %placeholder;
   }
 
   &:focus-visible,

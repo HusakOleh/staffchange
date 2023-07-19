@@ -6,7 +6,6 @@ export default function LanguageSelector() {
   const router = useRouter();
   const { locale } = router;
 
-  console.log(router);
 
   const changeLanguage = (e: ChangeEvent<HTMLSelectElement>) => {
     const locale = e.target.value;
@@ -28,9 +27,9 @@ export default function LanguageSelector() {
         </option>
         <option
           className="text-black"
-          value="et"
+          value="ee"
         >
-          ET
+          EE
         </option>
         <option
           className="text-black"

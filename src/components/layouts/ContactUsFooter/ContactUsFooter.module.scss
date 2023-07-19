@@ -46,7 +46,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
+
+
   }
 
   &__addressItem {
@@ -75,6 +77,7 @@
     &__contacts {
       flex-direction: row;
       gap: 8rem;
+      justify-content: space-between;
     }
 
     &__title {
@@ -82,7 +85,8 @@
     }
 
     &__address {
-      //flex-basis: 50%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     &__phones {
