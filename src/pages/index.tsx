@@ -18,15 +18,15 @@ export default function Home() {
         />
         <meta
           name="description"
-          content="Це опис вашої сторінки"
+          content="Staffchange is your trusted partner in job search and employment. We match job-seekers with employers in various sectors, providing high-quality services, innovative solutions, and personalized support. Join our community today and take the next step in your career!"
         />
         <meta
           property="og:title"
-          content="Ваш заголовок"
+          content="Welcome to Staffchange - Your Reliable Partner in Job Search and Employment!"
         />
         <meta
           property="og:description"
-          content="Це опис вашої сторінки"
+          content="Staffchange is a market leader in the employment industry. We specialize in finding ideal job opportunities for candidates, working with diverse companies across various sectors. We're committed to your career growth, providing personal support and guidance for your job search. Join us today!"
         />
         <meta
           property="og:image"
