@@ -1,7 +1,6 @@
 import ee from '../locales/ee.json';
 import pl from '../locales/pl.json';
 import ua from '../locales/ua.json';
-import ru from '../locales/ru.json';
 import en from '../locales/en.json';
 
 interface LocalizedText {
@@ -50,9 +49,6 @@ export function getLocalizedText(locale: string | undefined) {
       break;
     case 'ua':
       t = ua;
-      break;
-    case 'ru':
-      t = ru;
       break;
     default:
       t = en;
