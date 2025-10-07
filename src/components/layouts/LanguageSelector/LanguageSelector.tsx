@@ -21,10 +21,6 @@ const lang = [
   {
     name: 'Українська',
     locale: 'ua'
-  },
-  {
-    name: 'русский',
-    locale: 'ru'
   }
 ]
 
